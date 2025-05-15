@@ -19,7 +19,7 @@ init -3 python:
             return self.prefix + value
 
         def __eq__(self, other):
-            return other == self._get_unique()
+            return other == self._get_unique() or other == self.__str__()
 
         def __hash__(self):
             return hash(self._get_unique())
