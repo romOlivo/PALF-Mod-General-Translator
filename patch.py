@@ -1,3 +1,6 @@
+from translation_utils import convert_scene, set_global_path
+
 if __name__ == "__main__":
-    print("Still under development")
+    set_global_path("/testing_area")
+    convert_scene("prologue", "/day1")
 

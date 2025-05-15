@@ -1,5 +1,5 @@
 init -1 python:
-    prologue_scene_text = [
+    day_prologue_scene_text = [
         EvolvedString({
             LANG_ENG: "DISCLAIMER",
             LANG_ESP: "DISCLAIMER",
