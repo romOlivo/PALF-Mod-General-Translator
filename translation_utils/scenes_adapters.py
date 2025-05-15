@@ -83,8 +83,8 @@ def process_single_text(line_to_process, var_name):
 def _replace_line_and_write_output(line, var_name):
     global pos_var
     split_line_comma = line.split('"')
-    new_text = line + "\n"
-    if split_line_comma[1] not in INMUTABLE_TEXTS:
+    new_text = line
+    if len(split_line_comma) > 2 and split_line_comma[1] not in INMUTABLE_TEXTS:
         new_text = split_line_comma[0] + process_single_text(split_line_comma[1], var_name) + split_line_comma[2]
         for i in range(3, len(split_line_comma)):
             new_text += '"' + split_line_comma[i]
