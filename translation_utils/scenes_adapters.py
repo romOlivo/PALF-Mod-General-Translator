@@ -37,7 +37,12 @@ selected_language = DEFAULT_LANGUAGE
 
 # ---------- Private methods ----------
 def _get_path_rpy(scene_name, path_to_scene):
-    return f".{global_path}{path_to_scene}/{scene_name}.rpy"
+    path_to_scene = path_to_scene[1:] if path_to_scene[0] == '/' and global_path[-1] == '/' else path_to_scene
+    path_to_scene = path_to_scene[:-1] if path_to_scene[-1] == '/' and scene_name[0] == '/' else path_to_scene
+    init_slice = '/' if global_path[0] != '/' else ''
+    first_slice = '/' if global_path[-1] != '/' and path_to_scene[0] != '/' else ''
+    second_slice = '/' if path_to_scene[-1] != '/' and scene_name[0] != '/' else ''
+    return f".{init_slice}{global_path}{first_slice}{path_to_scene}{second_slice}{scene_name}.rpy"
 
 
 def _str_init_text_file(var_name):
