@@ -154,7 +154,7 @@ def convert_scene_2(scene_name, path_to_scene, test_mode=False):
         all_scene_info = file.read().split("\n")
     new_scene_text = ""
     for line in all_scene_info:
-        split_line_space = line.split(" ")
+        split_line_space = line.rstrip().split(" ")
         pos_first_word = 0
         while pos_first_word < len(split_line_space) and split_line_space[pos_first_word] == '':
             pos_first_word += 1
