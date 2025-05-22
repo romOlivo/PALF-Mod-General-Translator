@@ -5,10 +5,10 @@ from translation_utils import adapt_scene
 
 class TestScreenAdapter:
     @pytest.mark.parametrize("scene_name", [
-        "scene_example_01",                    # Without any modification
-        "scene_example_02",                    # With isinstance(evstr, str) modification
-        "scene_example_03",                    # With move.Name modification
-        "scene_example_04",                    # With isinstance(evstr, str) and specific modifications
+        "screen_example_01",                    # Without any modification
+        "screen_example_02",                    # With isinstance(evstr, str) modification
+        "screen_example_03",                    # With move.Name modification
+        "screen_example_04",                    # With isinstance(evstr, str) and specific modifications
     ])
     def test_screen_adapter(self, scene_name):
         result = adapt_scene(path="translation_tests/files/", scene_name=scene_name)
