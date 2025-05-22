@@ -37,6 +37,21 @@ class TestScenesAdapter:
         scenes_adapters.pos_var = 0
         assert scenes_adapters._replace_line_and_write_output(line, var_name) == expected_result
 
+    @pytest.mark.parametrize("scene_name", [
+        "scene_example_01",                      # No changes, only commands
+        "scene_example_02",                      # No changes, with end strings
+        "scene_example_03",                      # No changes, ignore ellipses
+        "scene_example_04",                      # Change, temporal character
+        "scene_example_05",                      # Change, characters
+        "scene_example_06",                      # Change, menu options
+    ])
+    def test_convert_scene(self, scene_name):
+        scenes_adapters.set_global_path("./translation_tests/")
+        result = scenes_adapters.convert_scene(scene_name, path_to_scene="files/", test_mode=True)
+        with open(f"./translation_tests/files/{scene_name}_result.rpy") as f:
+            expected_result = f.read()
+        assert result == expected_result
+
 
 
 

@@ -97,7 +97,7 @@ def set_global_path(path):
     global_path = path
 
 
-def convert_scene(scene_name, path_to_scene):
+def convert_scene(scene_name, path_to_scene, test_mode=False):
     global pos_var
     pos_var = 0
     scene_path = _get_path_rpy(scene_name, path_to_scene)
@@ -137,5 +137,8 @@ def convert_scene(scene_name, path_to_scene):
             else:
                 new_scene_text += line + "\n"
 
-    with open(scene_path, 'w') as f:
-        f.write(new_scene_text)
+    if test_mode:
+        return new_scene_text
+    else:
+        with open(scene_path, 'w') as f:
+            f.write(new_scene_text)
