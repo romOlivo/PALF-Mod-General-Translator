@@ -27,6 +27,7 @@ CHARACTER_NAMES = [
 ]
 INMUTABLE_TEXTS = ["[ellipse]", "[ellipses]"]
 SPECIAL_COMMAND_CHARACTER = "Character"
+IGNORE_SYMBOLS = ["$", "queue"]
 
 SPECIAL_CHARACTER = "\\\""
 SPECIAL_CHARACTER_TO_REPLACE = "#!#"
@@ -127,6 +128,53 @@ def convert_scene(scene_name, path_to_scene, test_mode=False):
                 new_scene_text += new_text + '\n'
                 pos_var += 2
             elif is_in_characters:
+                # It is a character line
+                new_scene_text += _replace_line_and_write_output(line, var_name)
+            elif '"' in split_line_space[pos_first_word]:
+                # Command start with string, so probably are menu options
+                new_scene_text += _replace_line_and_write_output(line, var_name)
+            elif 'renpy.input(' in line:
+                new_scene_text += _replace_line_and_write_output(line, var_name)
+            else:
+                new_scene_text += line + "\n"
+
+    if test_mode:
+        return new_scene_text
+    else:
+        with open(scene_path, 'w') as f:
+            f.write(new_scene_text)
+
+
+def convert_scene_2(scene_name, path_to_scene, test_mode=False):
+    global pos_var
+    pos_var = 0
+    scene_path = _get_path_rpy(scene_name, path_to_scene)
+    var_name = f"day_{scene_name}_scene_text"
+    with open(scene_path) as file:
+        all_scene_info = file.read().split("\n")
+    new_scene_text = ""
+    for line in all_scene_info:
+        split_line_space = line.split(" ")
+        pos_first_word = 0
+        while pos_first_word < len(split_line_space) and split_line_space[pos_first_word] == '':
+            pos_first_word += 1
+        if pos_first_word >= len(split_line_space):
+            # It is a blank line
+            new_scene_text += line + "\n"
+        else:
+            line = line.replace(SPECIAL_CHARACTER, SPECIAL_CHARACTER_TO_REPLACE)
+            is_ignorable = False
+            for symbol in IGNORE_SYMBOLS:
+                is_ignorable = is_ignorable or symbol in split_line_space[pos_first_word]
+            if 'TempCharacter' in line or SPECIAL_COMMAND_CHARACTER in line:
+                split_line_comma = line.split('"')
+                new_text = line + "\n"
+                if split_line_comma[0] not in INMUTABLE_TEXTS:
+                    new_text = (split_line_comma[0] + f'"[{var_name}[{pos_var}]]"' +
+                                split_line_comma[2] + f'"[{var_name}[{pos_var+1}]]"' + split_line_comma[4])
+                new_scene_text += new_text + '\n'
+                pos_var += 2
+            elif split_line_space[-1][-1] == '"' and not is_ignorable:
                 # It is a character line
                 new_scene_text += _replace_line_and_write_output(line, var_name)
             elif '"' in split_line_space[pos_first_word]:
