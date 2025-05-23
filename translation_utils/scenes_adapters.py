@@ -92,6 +92,14 @@ def _replace_line_and_write_output(line, var_name):
     return new_text + '\n'
 
 
+def _adapt_line(line):
+    new_line = line.replace(".{w=0.5}.{w=0.5}.{w=0.5}", "[ellipses]")
+    new_line = new_line.replace(".{w=0.25}.{w=0.25}.{w=0.25}", "[ellipses]")
+    new_line = new_line.replace("{w=0.5}.{w=0.5}.{w=0.5}.", "[ellipses]")
+    new_line = new_line.replace("{w=0.25}.{w=0.25}.{w=0.25}.", "[ellipses]")
+    return new_line
+
+
 # ---------- Public methods ----------
 def set_global_path(path):
     global global_path
@@ -107,6 +115,7 @@ def convert_scene(scene_name, path_to_scene, test_mode=False):
         all_scene_info = file.read().split("\n")
     new_scene_text = ""
     for line in all_scene_info:
+        line = _adapt_line(line)
         split_line_space = line.split(" ")
         pos_first_word = 0
         while pos_first_word < len(split_line_space) and split_line_space[pos_first_word] == '':
@@ -154,6 +163,7 @@ def convert_scene_2(scene_name, path_to_scene, test_mode=False):
         all_scene_info = file.read().split("\n")
     new_scene_text = ""
     for line in all_scene_info:
+        line = _adapt_line(line)
         split_line_space = line.rstrip().split(" ")
         pos_first_word = 0
         while pos_first_word < len(split_line_space) and split_line_space[pos_first_word] == '':
