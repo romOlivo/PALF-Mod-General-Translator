@@ -1,18 +1,23 @@
+
+# -------------------- CONSTANT DEFINITION --------------------
+IGNORE_SYMBOLS = ["$", "queue"]
+
+SPECIAL_CHARACTER_TO_REPLACE = "#!#"
+DEFAULT_LANGUAGE = "LANG_ENG"
+SPECIAL_CHARACTER = "\\\""
+
+# -------------------- GLOBAL DEFINITION --------------------
+
+selected_language = DEFAULT_LANGUAGE
+write_output = False
+output_text = ""
 global_path = ""
 pos_var = 0
 
 
-# ---------- CONSTANT DEFINITION ----------
-IGNORE_SYMBOLS = ["$", "queue"]
+# -------------------- Private methods --------------------
 
-SPECIAL_CHARACTER = "\\\""
-SPECIAL_CHARACTER_TO_REPLACE = "#!#"
-DEFAULT_LANGUAGE = "LANG_ENG"
-
-selected_language = DEFAULT_LANGUAGE
-
-
-# ---------- Private methods ----------
+#     >>>>>   Utils
 def _get_path_rpy(scene_name, path_to_scene):
     path_to_scene = path_to_scene[1:] if path_to_scene[0] == '/' and global_path[-1] == '/' else path_to_scene
     path_to_scene = path_to_scene[:-1] if path_to_scene[-1] == '/' and scene_name[0] == '/' else path_to_scene
@@ -29,6 +34,27 @@ def _get_processed_line(var_name):
     return processed_line
 
 
+#     >>>>>   Output
+
+def _str_init_text_file(var_name):
+    return f"init -1 python:\n    {var_name} = [\n        "
+
+
+def _str_end_text_file():
+    return "\n    ]\n"
+
+
+def _write_output(text):
+    global output_text, write_output
+    if not write_output:
+        return
+    new_str = "EvolvedString({\n"
+    new_str += f'            {selected_language}: "{text}",\n'
+    new_str += "        }), "
+    output_text += new_str
+
+
+#     >>>>>   Logic
 def _replace_line_and_write_output(line, var_name):
     split_line_comma = line.split('"')
     new_text = line
@@ -37,12 +63,14 @@ def _replace_line_and_write_output(line, var_name):
         for i in range(1, len(split_line_comma)):
             if i % 2 == 1:
                 new_text += _get_processed_line(var_name)
+                _write_output(split_line_comma[i])
             else:
                 new_text += split_line_comma[i]
     return new_text + '\n'
 
 
-# ---------- Public methods ----------
+# -------------------- Public methods --------------------
+#     >>>>>   Setters
 def set_global_path(path):
     global global_path
     global_path = path
@@ -53,14 +81,23 @@ def set_global_pos_var(new_pos_var):
     pos_var = new_pos_var
 
 
-def convert_scene(scene_name, path_to_scene, test_mode=False):
-    global pos_var
+def set_language(language):
+    global selected_language
+    selected_language = language
+
+
+#     >>>>>   Conversor
+def convert_scene(scene_name, path_to_scene, test_mode=False, write_out=False, output_file_name=None):
+    global pos_var, output_text, write_output
+    write_output = write_out
     pos_var = 0
     scene_path = _get_path_rpy(scene_name, path_to_scene)
     var_name = f"day_{scene_name}_scene_text"
     with open(scene_path) as file:
         all_scene_info = file.read().split("\n")
     new_scene_text = ""
+    if write_output:
+        output_text = _str_init_text_file(var_name)
     for line in all_scene_info:
         split_line_space = line.strip().split(" ")
         if len(split_line_space) == 1 and split_line_space[0] == "":
@@ -81,9 +118,21 @@ def convert_scene(scene_name, path_to_scene, test_mode=False):
                 new_scene_text += _replace_line_and_write_output(line, var_name)
             else:
                 new_scene_text += line + "\n"
+    if write_output:
+        output_text += _str_end_text_file()
     if test_mode:
-        return new_scene_text
+        if write_output:
+            return new_scene_text, output_text
+        else:
+            return new_scene_text
     else:
         with open(scene_path, 'w') as f:
             f.write(new_scene_text)
+        if write_output:
+            if output_file_name is not None:
+                with open(output_file_name, 'w') as f:
+                    f.write(output_text)
+            else:
+                with open(_get_path_rpy(f"{scene_name}_text", path_to_scene), 'w') as f:
+                    f.write(output_text)
 
