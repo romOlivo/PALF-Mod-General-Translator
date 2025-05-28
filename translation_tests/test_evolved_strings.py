@@ -75,3 +75,15 @@ class TestEvolvedString:
     def test_lt(self, first, second, expected_result):
         translation_tests.temp.selected_language = LANG_ESP
         assert (first < second) == expected_result
+
+    @pytest.mark.parametrize("evolved_string,expected_result", [
+        (EvolvedString({LANG_ENG: "This is a test"}), "This is a test"),
+        (EvolvedString({LANG_ENG: "This is a {test}"}), "This is a {test}"),
+        (EvolvedString({LANG_ENG: "V1: {v1} --- V2: {v2}"}), "V1: {v1} --- V2: {v2}"),
+        (EvolvedString({LANG_ENG: "V1: [v1] --- V2: [v2]"}), "V1: hello --- V2: goodbye"),
+        (EvolvedString({LANG_ENG: "V1: [v1] --- V2: {v2}"}), "V1: hello --- V2: {v2}"),
+    ])
+    def test_to_scene_text(self, evolved_string, expected_result):
+        v1 = "hello"
+        v2 = "goodbye"
+        assert evolved_string.to_scene_text(vars()) == expected_result

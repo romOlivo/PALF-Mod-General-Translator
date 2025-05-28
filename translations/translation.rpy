@@ -5,6 +5,7 @@ init -3 python:
 
     languages = [LANG_ENG, LANG_ESP]
 
+
     class EvolvedString:
         def __init__(self, values, prefix=""):
             self.values = values
@@ -76,3 +77,11 @@ init -3 python:
 
         def index(self, value):
             return self._get_unique().index(value)
+
+        def to_scene_text(self, map):
+            text = self.__str__()
+            text = text.replace("{", "#+#").replace("}", "#-#")
+            text = text.replace("[", "{").replace("]", "}")
+            text = text.format_map(map)
+            text = text.replace("#+#", "{").replace("#-#", "}")
+            return text
