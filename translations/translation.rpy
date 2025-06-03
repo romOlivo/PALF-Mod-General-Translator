@@ -1,9 +1,10 @@
 init -3 python:
     LANG_ENG = "english"
     LANG_ESP = "spanish"
+    LANG_FRE = "french"
     selected_language = LANG_ESP
 
-    languages = [LANG_ENG, LANG_ESP]
+    languages = [LANG_ENG, LANG_ESP, LANG_FRE]
 
 
     class EvolvedString:

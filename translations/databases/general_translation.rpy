@@ -4,6 +4,10 @@ init -1 python:
             "Physical": "Físico",
             "Special": "Especial",
             "Status": "Estatus",
+        }, LANG_FRE: {
+            "Physical": "Physical",
+            "Special": "Special",
+            "Status": "Status",
         }
     }
 
@@ -27,5 +31,24 @@ init -1 python:
             "Dark": "Siniestro",
             "Steel": "Acero",
             "Fairy": "Hada",
+        }, LANG_FRE: {
+            "Normal": "Normal",
+            "Fire": "Fire",
+            "Water": "Watr",
+            "Electric": "Electric",
+            "Grass": "Grass",
+            "Ice": "Ice",
+            "Fighting": "Fighting",
+            "Poison": "Poison",
+            "Ground": "Ground",
+            "Flying": "Flying",
+            "Psychic": "Psychic",
+            "Bug": "Bug",
+            "Rock": "Rock",
+            "Ghost": "Ghost",
+            "Dragon": "Dragon",
+            "Dark": "Dark",
+            "Steel": "Steel",
+            "Fairy": "Fairy",
         }
     }
