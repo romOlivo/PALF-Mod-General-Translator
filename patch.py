@@ -1,4 +1,5 @@
 from translation_utils import convert_scene, set_global_path, adapt_scene
+import shutil
 
 if __name__ == "__main__":
     set_global_path("/scenes/")
@@ -8,4 +9,5 @@ if __name__ == "__main__":
             scene_config_split = scene_config.split("#")
             convert_scene(scene_config_split[0], scene_config_split[1], write_out=True)
     adapt_scene()
+    shutil.rmtree("./testing_area/translation_tests")
 
