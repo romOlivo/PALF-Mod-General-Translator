@@ -980,7 +980,7 @@ init -1 python:
             "Mega Kick": ["Ultimawashi", "Un puissant coup de pied infligeant de lourds dégâts."],
             "Jump Kick": ["Pied Sauté", "Si le coup échoue, le lanceur perd la moitié de ses PV."],
             "Rolling Kick": ["Mawashi Geri", "Peut apeurer l'adversaire."],
-            "Sand Attack": ["Jet de Sable", "Réduit la Précision de l'adversaire."]
+            "Sand Attack": ["Jet de Sable", "Réduit la Précision de l'adversaire."],
             "Headbutt": ["Coup d Boule", "Peut apeurer l'adversaire."],
             "Horn Attack": ["Koud Korne", "Le lanceur attaque avec ses cornes."],
             "Fury Attack": ["Furie", "Frappe 2 à 5 fois en un tour."],
@@ -1012,7 +1012,7 @@ init -1 python:
             "Surf": ["Surf", "Inflige des dégâts à tous les Pokémon adjacents."],
             "Ice Beam": ["Laser Glace", "Peut geler l'adversaire."],
             "Blizzard": ["Blizzard", "Peut geler l'adversaire."],
-            "Psybeam": ["Rafale Psy", "Peut rendre confus l'adversaire."]
+            "Psybeam": ["Rafale Psy", "Peut rendre confus l'adversaire."],
             "Bubble Beam": ["Bulles d O", "Peut réduire la Vitesse de l'adversaire."],
             "Aurora Beam": ["Onde Boréale", "Peut réduire l'Attaque de l'adversaire."],
             "Hyper Beam": ["Ultralaser", "Le lanceur doit se recharger au tour suivant."],
@@ -1031,7 +1031,7 @@ init -1 python:
             "Solar Beam": ["Lance-Soleil", "Charge au premier tour, attaque au deuxième."],
             "Poison Powder": ["Poudre Toxik", "Empoisonne l'adversaire."],
             "Stun Spore": ["Para-Spore", "Paralyse l'adversaire."],
-            "Sleep Powder": ["Poudre Dodo", "Endort l'adversaire."]
+            "Sleep Powder": ["Poudre Dodo", "Endort l'adversaire."],
             "Petal Dance": ["Danse Fleurs", "Le lanceur attaque pendant 2 à 3 tours puis devient confus."],
             "String Shot": ["Sécrétion", "Réduit fortement la Vitesse de l'adversaire."],
             "Dragon Rage": ["Draco-Rage", "Inflige toujours 40 PV."],
@@ -1048,7 +1048,7 @@ init -1 python:
             "Confusion": ["Choc Mental", "Peut rendre confus l'adversaire."],
             "Psychic": ["Psyko", "Peut réduire la Défense Spéciale de l'adversaire."],
             "Hypnosis": ["Hypnose", "Endort l'adversaire."],
-            "Meditate": ["Yoga", "Augmente l'Attaque du lanceur."]
+            "Meditate": ["Yoga", "Augmente l'Attaque du lanceur."],
             "Agility": ["Hâte", "Augmente fortement la Vitesse du lanceur."],
             "Quick Attack": ["Vive-Attaque", "Le lanceur attaque en premier."],
             "Rage": ["Frénésie", "Augmente l'Attaque du lanceur lorsqu'il est touché."],
@@ -1066,7 +1066,7 @@ init -1 python:
             "Defense Curl": ["Boul Armure", "Augmente la Défense du lanceur."],
             "Barrier": ["Bouclier", "Augmente fortement la Défense du lanceur."],
             "Light Screen": ["Mur Lumière", "Réduit de moitié les dégâts des attaques Spéciales pendant 5 tours."],
-            "Haze": ["Buée Noire", "Réinitialise tous les changements de statistiques."]
+            "Haze": ["Buée Noire", "Réinitialise tous les changements de statistiques."],
             "Reflect": ["Protection", "Réduit de moitié les dégâts des attaques Physiques pendant 5 tours."],
             "Focus Energy": ["Puissance", "Augmente le taux de coups critiques."],
             "Bide": ["Patience", "Le lanceur subit des dégâts pendant deux tours, puis riposte avec des dégâts doublés."],
@@ -1086,7 +1086,7 @@ init -1 python:
             "Spike Cannon": ["Picanon", "Attaque 2 à 5 fois en un tour."],
             "Constrict": ["Constriction", "Peut réduire la Vitesse de l'adversaire d'un niveau."],
             "Amnesia": ["Amnésie", "Augmente fortement la Défense Spéciale du lanceur."],
-            "Kinesis": ["Télékinésie", "Réduit la Précision de l'adversaire."]
+            "Kinesis": ["Télékinésie", "Réduit la Précision de l'adversaire."],
             "Soft-Boiled": ["E-Coque", "Le lanceur récupère la moitié de ses PV max."],
             "High Jump Kick": ["Pied Voltige", "Si le coup échoue, le lanceur perd la moitié de ses PV."],
             "Glare": ["Regard Médusant", "Paralyse l'adversaire."],
@@ -1117,7 +1117,7 @@ init -1 python:
             "Super Fang": ["Croc Fatal", "Réduit toujours les PV de la cible à moitié."],
             "Slash": ["Tranche", "Ratio de coups critiques élevé."],
             "Substitute": ["Clonage", "Utilise des PV pour créer un leurre qui encaisse les coups."],
-            "Struggle": ["Lutte", "Ne peut être utilisé que lorsque tous les PP sont épuisés. Inflige des dégâts au lanceur."]
+            "Struggle": ["Lutte", "Ne peut être utilisé que lorsque tous les PP sont épuisés. Inflige des dégâts au lanceur."],
             "Sketch": ["Gribouille", "Copie de manière permanente le dernier mouvement de la cible."],
             "Triple Kick": ["Triple Pied", "Donne trois coups successifs avec une puissance croissante."],
             "Thief": ["Larcin", "Permet aussi de voler l'objet tenu de la cible."],
@@ -1148,7 +1148,7 @@ init -1 python:
             "Foresight": ["Clairvoyance", "Réinitialise l'Évasion de la cible et supprime les immunités des Pokémon de type Ghost."],
             "Destiny Bond": ["Lien du Destin", "Si le lanceur est KO, la cible le sera aussi."],
             "Perish Song": ["Requiem", "Tous les Pokémon en jeu lorsque ce mouvement est utilisé seront KO dans 3 tours."],
-            "Icy Wind": ["Vent Glace", "Réduit la Vitesse de la cible."]
+            "Icy Wind": ["Vent Glace", "Réduit la Vitesse de la cible."],
             "Detect": ["Détection", "Protège le lanceur mais peut échouer s'il est utilisé consécutivement."],
             "Bone Rush": ["Charge Os", "Donne 2 à 5 coups en un tour."],
             "Lock-On": ["Verrouillage", "Le prochain coup du lanceur est garanti pour toucher."],
@@ -1176,7 +1176,7 @@ init -1 python:
             "Sacred Fire": ["Feu Sacré", "Peut brûler la cible."],
             "Magnitude": ["Ampleur", "Inflige des dégâts avec une puissance aléatoire."],
             "Dynamic Punch": ["Dynamo-Poing", "Confond la cible."],
-            "Megahorn": ["Mégacorne", "Attaque puissante."]
+            "Megahorn": ["Mégacorne", "Attaque puissante."],
             "Dragon Breath": ["Draco-Souffle", "Peut paralyser la cible."],
             "Baton Pass": ["Relais", "Le lanceur change de Pokémon et transmet les changements de statistiques au Pokémon entrant."],
             "Encore": ["Encore", "Oblige la cible à répéter son dernier mouvement pendant 3 tours."],
@@ -1203,7 +1203,7 @@ init -1 python:
             "Future Sight": ["Prescience", "Les dégâts se produisent 2 tours plus tard."],
             "Rock Smash": ["Éclate-Roc", "Peut réduire la Défense de la cible."],
             "Whirlpool": ["Siphon", "Piège la cible, lui infligeant des dégâts pendant 4 à 5 tours."],
-            "Beat Up": ["Baston", "Chaque Pokémon de l'équipe attaque."]
+            "Beat Up": ["Baston", "Chaque Pokémon de l'équipe attaque."],
             "Fake Out": ["Bluff", "Le lanceur attaque en premier, la cible apeure. Utilisable uniquement au premier tour."],
             "Uproar": ["Brouhaha", "Le lanceur attaque pendant 3 tours et empêche l'endormissement."],
             "Stockpile": ["Stockage", "Stocke de l'énergie pour une utilisation avec Relâche et Avale."],
@@ -1234,7 +1234,7 @@ init -1 python:
             "Revenge": ["Vendetta", "La puissance augmente si le lanceur a été touché en premier."],
             "Brick Break": ["Casse-Brique", "Brise les barrières Protection et Mur Lumière."],
             "Yawn": ["Bâillement", "Endort la cible au tour suivant."],
-            "Knock Off": ["Sabotage", "Enlève l'objet tenu de la cible pour le reste du combat."]
+            "Knock Off": ["Sabotage", "Enlève l'objet tenu de la cible pour le reste du combat."],
             "Endeavor": ["Effort", "Réduit les PV de la cible au même niveau que ceux du lanceur."],
             "Eruption": ["Éruption", "Plus fort lorsque les PV du lanceur sont élevés."],
             "Skill Swap": ["Échange", "Le lanceur échange ses Talents avec la cible."],
@@ -1262,7 +1262,7 @@ init -1 python:
             "Blast Burn": ["Rafale Feu", "Le lanceur doit recharger au tour suivant."],
             "Hydro Cannon": ["Hydroblast", "Le lanceur doit recharger au tour suivant."],
             "Meteor Mash": ["Poing Météore", "Peut augmenter l'Attaque du lanceur."],
-            "Astonish": ["Étonnement", "Peut provoquer l'apeurerement."]
+            "Astonish": ["Étonnement", "Peut provoquer l'apeurerement."],
             "Weather Ball": ["Ball Météo", "La puissance et le type du mouvement changent avec la météo."],
             "Aromatherapy": ["Aromathérapie", "Guérit tous les problèmes de statut dans l'équipe du lanceur."],
             "Fake Tears": ["Croco Larme", "Réduit considérablement la Défense Spéciale de l'adversaire."],
@@ -1289,7 +1289,7 @@ init -1 python:
             "Iron Defense": ["Mur de Fer", "Augmente considérablement la Défense du lanceur."],
             "Block": ["Barrage", "L'adversaire ne peut pas fuir ni échanger."],
             "Howl": ["Grondement", "Augmente l'Attaque du lanceur."],
-            "Dragon Claw": ["Draco-Griffe", "Une attaque dommageuse."]
+            "Dragon Claw": ["Draco-Griffe", "Une attaque dommageuse."],
             "Frenzy Plant": ["Végé-Attaque", "Le lanceur doit recharger au tour suivant."],
             "Bulk Up": ["Gonflette", "Augmente l'Attaque et la Défense du lanceur."],
             "Bounce": ["Rebond", "Saute au premier tour, attaque au second. Peut paralyser l'adversaire."],
@@ -1325,7 +1325,7 @@ init -1 python:
             "Close Combat": ["Close Combat", "Réduit la Défense et la Défense Spéciale du lanceur."],
             "Payback": ["Représailles", "La puissance double si le lanceur a été attaqué en premier."],
             "Assurance": ["Assurance", "La puissance double si l'adversaire a déjà pris des dégâts dans le même tour."],
-            "Embargo": ["Embargo", "L'adversaire ne peut pas utiliser d'objets."]
+            "Embargo": ["Embargo", "L'adversaire ne peut pas utiliser d'objets."],
             "Fling": ["Dégommage", "Jette l'objet du lanceur pour augmenter sa Vitesse et son Évasion de façon importante."],
             "Psycho Shift": ["Échange Psy", "Transfère l'état du lanceur à l'adversaire s'il touche."],
             "Trump Card": ["Atout", "Plus le PP est faible, plus la puissance est élevée."],
@@ -1746,7 +1746,6 @@ init -1 python:
             "Stuff Cheeks": ["Garde-à-Joues", ""],
             "Tar Shot": ["Goudronnage", ""],
             "Magic Powder": ["Poudre Magique", ""],
--
             "Dragon Darts": ["Draco-Flèches", ""],
             "Teatime": ["Pause Thé", ""],
             "Octolock": ["Octoprise", ""],
