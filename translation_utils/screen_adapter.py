@@ -6,7 +6,7 @@ MODIFICATIONS = {
 
 
 def adapt_scene(path="", scene_name="screens"):
-    with open(f"./{path}{scene_name}.rpy") as f:
+    with open(f"./{path}{scene_name}.rpy", encoding="utf8") as f:
         screen_str = f.read()
         for modification in MODIFICATIONS:
             screen_str = screen_str.replace(modification, MODIFICATIONS[modification])
