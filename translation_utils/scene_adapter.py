@@ -72,27 +72,36 @@ def _replace_line_and_write_output(line, var_name):
 
 # -------------------- Public methods --------------------
 #     >>>>>   Setters
-def set_global_path(path):
+def set_global_path(path:str):
     global global_path
     global_path = path
 
 
-def set_global_pos_var(new_pos_var):
+def set_global_pos_var(new_pos_var:int):
     global pos_var
     pos_var = new_pos_var
 
 
-def set_language(language):
+def set_language(language:str):
     global selected_language
     selected_language = language
 
 
-def fuse_scene_text(file_path_original, file_path_translation, write_out=True):
+"""
+    Fuses the new generated scene_text of the original version with the translated text.
+    Input variables:
+    file_path_original -----> Absolute path to the file containing the translated text.
+    file_path_translation --> Relative path to the file containing the translated text.
+    write_out --------------> If the output needs to be written in a file. If not, then the str value is returned
+"""
+def fuse_scene_text(file_path_original:str, file_path_translation:str, write_out=True):
     text_new = ""
+    # Definition of the split values. Recommended not to touch.
     txt_spl1 = "EvolvedString({"
     txt_spl2 = "        }), "
     with open(file_path_original) as f:
         text_original = f.read()
+    # If there is no translation, there is nothing to be done.
     if file_path_translation is None or not os.path.isfile(file_path_translation):
         text_new = text_original
     else:
@@ -100,31 +109,41 @@ def fuse_scene_text(file_path_original, file_path_translation, write_out=True):
             text_translated = f.read()
         to_slc = text_original.split(txt_spl1)
         tt_slc = text_translated.split(txt_spl1)
+        # If there is different number of lines in each version, then we return an incompatibility error.
         if len(to_slc) != len(tt_slc):
             raise ValueError(
                 "The length of the dictionaries of the original and translated versions are not the same." +
                 " Impossible to fuse both files. Contact with the translation team to fixed the bug. \n\n" +
                 "## --> File involved: " + file_path_original
             )
+        # If there is no text to translate, then we do nothing
         if len(to_slc) == 1:
             text_new = text_original
         else:
+            # We fuse both versions
             text_new = to_slc[0]
             for i in range(1, len(to_slc)):
                 text_new = f"{text_new}{txt_spl1}{to_slc[i].split(txt_spl2)[0]}{tt_slc[i].split(txt_spl2)[0][1:]}{txt_spl2}"
-                print("hey")
-                print(tt_slc[i].split(txt_spl2)[0][1:].split(txt_spl2))
-
             text_new = f"{text_new}{to_slc[-1].split(txt_spl2)[-1]}"
     if write_out:
+        # Write the result in the original file if needed.
         with open(file_path_original, 'w') as f:
             f.write(text_new)
     else:
         return text_new
 
 
-#     >>>>>   Conversor
-def convert_scene(scene_name, path_to_scene, test_mode=False, write_out=False, output_file_name=None):
+"""
+    Converts the original scene file into one compatible with the translations. Also, makes the file that contains
+    all the original dialogs in english.
+    Input variables:
+    scene_name --------> String containing the name of the scene to translate. ONLY THE NAME!!
+    path_to_scene -----> Relative path to the scene to translate.
+    test_mode ---------> If it using in testing.
+    write_out ---------> If both files needs to be created. If not, then the new scene text is returned.
+    output_file_name --> Name of the file for the dialog text.
+"""
+def convert_scene(scene_name: str, path_to_scene: str, test_mode=False, write_out=False, output_file_name:str=None):
     global pos_var, output_text, write_output
     write_output = write_out
     pos_var = 0
@@ -142,29 +161,35 @@ def convert_scene(scene_name, path_to_scene, test_mode=False, write_out=False, o
             new_scene_text += line + "\n"
         else:
             line = line.replace(SPECIAL_CHARACTER, SPECIAL_CHARACTER_TO_REPLACE)
+            # Checks for special symbols
             is_ignorable = False
             for symbol in IGNORE_SYMBOLS:
                 is_ignorable = is_ignorable or symbol in split_line_space[0]
+            # It is a character line
             if split_line_space[-1][-1] == '"' and not is_ignorable:
-                # It is a character line
                 new_scene_text += _replace_line_and_write_output(line, var_name)
+            # Command start with string, so probably are menu options
             elif '"' in split_line_space[0]:
-                # Command start with string, so probably are menu options
                 new_scene_text += _replace_line_and_write_output(line, var_name)
+            # Special command
             elif 'renpy.input(' in line:
                 new_scene_text += _replace_line_and_write_output(line, var_name)
+            # Other case
             else:
                 new_scene_text += line + "\n"
     if write_output:
         output_text += _str_end_text_file()
+    # If testing, then return the values
     if test_mode:
         if write_output:
             return new_scene_text, output_text
         else:
             return new_scene_text
     else:
+        # Write the adapted scene if needed
         with open(scene_path, 'w') as f:
             f.write(new_scene_text)
+        # Write the dialog texts if needed
         if write_output:
             if output_file_name is not None:
                 with open(output_file_name, 'w') as f:
