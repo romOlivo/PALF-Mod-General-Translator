@@ -1,3 +1,4 @@
+import os
 
 # -------------------- CONSTANT DEFINITION --------------------
 IGNORE_SYMBOLS = ["$", "queue"]
@@ -86,6 +87,42 @@ def set_language(language):
     selected_language = language
 
 
+def fuse_scene_text(file_path_original, file_path_translation, write_out=True):
+    text_new = ""
+    txt_spl1 = "EvolvedString({"
+    txt_spl2 = "        }), "
+    with open(file_path_original) as f:
+        text_original = f.read()
+    if file_path_translation is None or not os.path.isfile(file_path_translation):
+        text_new = text_original
+    else:
+        with open(file_path_translation) as f:
+            text_translated = f.read()
+        to_slc = text_original.split(txt_spl1)
+        tt_slc = text_translated.split(txt_spl1)
+        if len(to_slc) != len(tt_slc):
+            raise ValueError(
+                "The length of the dictionaries of the original and translated versions are not the same." +
+                " Impossible to fuse both files. Contact with the translation team to fixed the bug. \n\n" +
+                "## --> File involved: " + file_path_original
+            )
+        if len(to_slc) == 1:
+            text_new = text_original
+        else:
+            text_new = to_slc[0]
+            for i in range(1, len(to_slc)):
+                text_new = f"{text_new}{txt_spl1}{to_slc[i].split(txt_spl2)[0]}{tt_slc[i].split(txt_spl2)[0][1:]}{txt_spl2}"
+                print("hey")
+                print(tt_slc[i].split(txt_spl2)[0][1:].split(txt_spl2))
+
+            text_new = f"{text_new}{to_slc[-1].split(txt_spl2)[-1]}"
+    if write_out:
+        with open(file_path_original, 'w') as f:
+            f.write(text_new)
+    else:
+        return text_new
+
+
 #     >>>>>   Conversor
 def convert_scene(scene_name, path_to_scene, test_mode=False, write_out=False, output_file_name=None):
     global pos_var, output_text, write_output
@@ -135,4 +172,3 @@ def convert_scene(scene_name, path_to_scene, test_mode=False, write_out=False, o
             else:
                 with open(_get_path_rpy(f"{scene_name}_text", path_to_scene), 'w') as f:
                     f.write(output_text)
-

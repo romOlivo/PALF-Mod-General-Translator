@@ -77,6 +77,18 @@ class TestScenesAdapter:
             expected_result = f.read()
         assert result == expected_result
 
-
-
+    @pytest.mark.parametrize("path_original,path_translated,path_result", [
+        ("scene_example_01_output", "scene_example_01_output", "scene_example_01_output"), # All Blanc
+        ("scene_example_04_output", "scene_example_04_t1", "scene_example_04_t1_result"),  # Normal with 1
+        ("scene_example_04_output", "scene_example_04_t2", "scene_example_04_t2_result"),  # Normal with 2
+    ])
+    def test_fuse_scene(self, path_original, path_translated, path_result):
+        all_path_original = f"./translation_tests/files/{path_original}.rpy"
+        all_path_translated = f"./translation_tests/files/{path_translated}.rpy"
+        with open(f"./translation_tests/files/{path_result}.rpy") as f:
+            expected_result = f.read()
+        result = scene_adapter.fuse_scene_text(all_path_original, all_path_translated, write_out=False)
+        print(result)
+        print(expected_result)
+        assert result == expected_result
 
