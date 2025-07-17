@@ -1,847 +1,720 @@
 init -1 python:
     day_010405secondhomeroom_scene_text = [
         EvolvedString({
-            LANG_ENG: "You return to homeroom as the school day draws to a close.",
             LANG_ESP: "Regresas a tu salón de clases generales mientras el primer día llega a su fin.",
         }), EvolvedString({
-            LANG_ENG: "The day didn't feel like it dragged on for that long, but all things considered, I'm ready to call it.{w=0.5} Judging by the looks on everyone's faces, they look like they're ready, too.",
             LANG_ESP: "El día no se sintió tan largo, pero considerando todo, estoy listo para darlo por terminado.{w=0.5} Y por las caras de todos, parece que también lo están.",
         }), EvolvedString({
-            LANG_ENG: "The final period burns through while you listen to Professor Oak talk about rather trivial matters.",
             LANG_ESP: "La última clase pasa rápidamente mientras escuchas al Profesor Oak hablar de cosas muy triviales.",
         }), EvolvedString({
-            LANG_ENG: "It's weird. I was expecting class with the professor to be a little more--how should I put it--fulfilling?{w=0.5} At least, that's what my other classmates were making it out to be earlier in the day.",
             LANG_ESP: "Es extraño, esperaba que la clase con el profesor fuera un poco más... ¿cómo decirlo?... ¿satisfactoria?{w=0.5} Al menos, eso es lo que mis compañeros dieron a entender más temprano.",
         }), EvolvedString({
-            LANG_ENG: "But so far I haven't taken anything out of homeroom that's especially memorable, other than the scary speech about the school's graduation rate.",
             LANG_ESP: "Pero hasta ahora no he sacado nada especialmente memorable de esta clase, sacando el discurso aterrador sobre la tasa de graduación.",
         }), EvolvedString({
-            LANG_ENG: "I can tell by the look in your eyes that you're all quite tired of listening to me prattle on.",
             LANG_ESP: "Puedo ver en sus ojos que están bastante cansados de escucharme divagar.",
         }), EvolvedString({
-            LANG_ENG: "To tell you the truth, I'm tired of it, too, ha ha!",
             LANG_ESP: "Para ser honesto, yo también estoy cansado, ¡ja, ja, ja!",
         }), EvolvedString({
-            LANG_ENG: "But before I dismiss you, let me give you all a welcoming gift as celebration for your acceptance into Kobukan Academy.",
             LANG_ESP: "Pero antes de dejarlos ir, quiero darles un regalo de bienvenida como celebración por haber sido aceptados en la Academia Kobukan.",
         }), EvolvedString({
-            LANG_ENG: "Are those what I think they are?{w=0.5} If so, then this class just got a little more exciting.",
             LANG_ESP: "¿Son lo que creo que son?{w=0.5} Si es así, entonces esta clase acaba de volverse mucho más emocionante.",
         }), EvolvedString({
-            LANG_ENG: "Today, each of you will be taking home a Pokémon for yourself, courtesy of the academy!",
             LANG_ESP: "Hoy, cada uno de ustedes se llevará un Pokémon a casa, ¡cortesía de la academia!",
         }), EvolvedString({
-            LANG_ENG: "In each of these Poké Balls that you will receive is a random unevolved, untamed Pokémon.{w=0.5} Consider them your homework for the next year.",
             LANG_ESP: "En cada una de estas Poké Balls que recibirán, hay un Pokémon no evolucionado y sin domesticar.{w=0.5} Considérenlo su tarea para el próximo año.",
         }), EvolvedString({
-            LANG_ENG: "Hey, I got plenty of Pokémon back home already.{w=0.5} I don't need any more, especially unevolved ones.",
             LANG_ESP: "Hey, yo ya tengo un montón de Pokémon en casa.{w=0.5} No necesito más, y mucho menos unos sin evolucionar.",
         }), EvolvedString({
-            LANG_ENG: "{color=#0048ff}Regardless of what Pokémon you may already own, these Pokémon will be required to stay on hand for the rest of your time at Kobukan Academy.{/color}",
             LANG_ESP: "{color=#0048ff}Independientemente de los Pokémon que ya posean, estos Pokémon deberán permanecer con ustedes durante el resto de su tiempo en la Academia Kobukan.{/color}",
         }), EvolvedString({
-            LANG_ENG: "{color=#0048ff}At the end of the year, this Pokémon will be reviewed along with yourself and other potential Pokémon in your party to determine whether or not you can graduate.{/color}",
             LANG_ESP: "{color=#0048ff}Al final del año, este Pokémon será evaluado junto con ustedes y otros posibles Pokémon en su equipo para determinar si pueden graduarse.{/color}",
         }), EvolvedString({
-            LANG_ENG: "GREAT!{w=0.6} I just {i}love{/i} being forced to take on liabilities!",
             LANG_ESP: "¡GENIAL!{w=0.6} ¡Me {i}ENCANTA{/i} que me obliguen a aceptar responsabilidades adicionales!",
         }), EvolvedString({
-            LANG_ENG: "That's the spirit, ",
-            LANG_ESP: "¡Esa es la actitud, ",
+            LANG_ESP: "¡Esa es la actitud, [blue_name]!",
         }), EvolvedString({
-            LANG_ENG: "!",
-            LANG_ESP: "!",
-        }), EvolvedString({
-            LANG_ENG: "So that's how they do it.{w=0.5} I had assumed this school wasn't going to be all about good grades, so this isn't a complete shocker.",
             LANG_ESP: "Así parece ser como va la mano.{w=0.5} Ya suponía que esta academia no se centraría unicamente en las buenas notas, así que esto no me toma tan por sorpresa.",
         }), EvolvedString({
-            LANG_ENG: "I'll call you up one by one to receive your Pokémon.{w=0.5} Remember, what you get is what you get!",
             LANG_ESP: "Los llamaré uno por uno para que reciban su Pokémon.{w=0.5} Recuerden, ¡lo que les toca, les toca!",
         }), EvolvedString({
-            LANG_ENG: "This takes me back to when I was a kid and Professor Oak gave me ",
-            LANG_ESP: "Esto me hace acordar cuando era un niño y el Profesor Oak me dio a ",
+            LANG_ESP: "Esto me hace acordar cuando era un niño y el Profesor Oak me dio a [pika_name].",
         }), EvolvedString({
-            LANG_ENG: ".",
-            LANG_ESP: ".",
+            LANG_ESP: "Estudiante emocionado",
         }), EvolvedString({
-            LANG_ENG: "Nice. Vulpix are pretty rare, so I bet whoever I get has to be at least equally as rare!",
+            LANG_ESP: "\"¡¿Me toco un Vulpix?!{w=0.5} ¡WOOHOO!\"",
+        }), EvolvedString({
             LANG_ESP: "Genial, los Vulpix son bastante raros, por lo seguro que el que me toque será al menos igual de raro.",
         }), EvolvedString({
-            LANG_ENG: "",
-            LANG_ESP: "¡",
+            LANG_ESP: "¡[first_name]!",
         }), EvolvedString({
-            LANG_ENG: "!",
-            LANG_ESP: "!",
-        }), EvolvedString({
-            LANG_ENG: "Phew! Okay.",
             LANG_ESP: "Uff, muy bien...",
         }), EvolvedString({
-            LANG_ENG: "Here goes.{w=0.5} The moment of truth!",
             LANG_ESP: "Aquí vamos.{w=0.5} ¡El momento de la verdad!",
         }), EvolvedString({
-            LANG_ENG: "Knowing my luck, I'm {i}gonna{/i} end up getting a Rattata or Bidoof.",
             LANG_ESP: "Con mi suerte, {i}seguro{/i} que voy a terminar con un Rattata o un Bidoof.",
         }), EvolvedString({
-            LANG_ENG: "Whatever gods are out there watching me, please, don't let me down!",
             LANG_ESP: "Sean quienes sean los dioses que me estén mirando, por favor, ¡no me fallen!",
         }), EvolvedString({
-            LANG_ENG: "",
-            LANG_ESP: "",
+            LANG_ESP: ".{w=0.5}.{w=0.5}.{w=0.5} Un momento.",
         }), EvolvedString({
-            LANG_ENG: "Wait.",
-            LANG_ESP: " Un momento.",
-        }), EvolvedString({
-            LANG_ENG: "The Poké Balls here are marked with National ID numbers. I've memorized {i}every{/i} Pokémon and their numbers. I can just... like, pick, whatever I want!",
             LANG_ESP: "Las Poké Balls aquí están marcadas con números de la Dex Nacional. Me he memorizado {i}todos{/i} los Pokémon y sus números. Puedo, simplemente... ¡elegir el que quiera!",
         }), EvolvedString({
-            LANG_ENG: "That means... I can influence my choice here. Sam knows that I know the National ID numbers of every Pokémon, right? Maybe he was giving me a leg up here.",
             LANG_ESP: "Eso significa que... puedo influir en mi elección. Sam sabe que me sé los números de cada Pokémon de la Dex Nacional, ¿no? Tal vez me está dando una ventaja.",
         }), EvolvedString({
-            LANG_ENG: ">Pick from three random balls",
             LANG_ESP: ">Elegir entre tres Poké Balls al azar",
         }), EvolvedString({
-            LANG_ENG: ">Pick from three Pokémon from your elective classes",
             LANG_ESP: ">Elegir entre tres Pokémon de tus electividades",
         }), EvolvedString({
-            LANG_ENG: ">Pick from three Pokémon from a specific type",
             LANG_ESP: ">Elegir entre tres Pokémon de un tipo específico",
         }), EvolvedString({
-            LANG_ENG: ">Pick a specific Pokémon",
             LANG_ESP: ">Elegir un Pokémon específico",
         }), EvolvedString({
-            LANG_ENG: "Hmmm...",
             LANG_ESP: "Hmmm...",
         }), EvolvedString({
-            LANG_ENG: "Congratulations, it's ",
-            LANG_ESP: "¡Felicidades, es un ",
+            LANG_ESP: "¡Felicidades, es un [starter_name]!",
         }), EvolvedString({
-            LANG_ENG: " ",
-            LANG_ESP: "!",
+            LANG_ESP: "Este Pokémon tiene mucha energia.",
         }), EvolvedString({
-            LANG_ENG: "!",
+            LANG_ESP: "... Sin embargo, también es bastante grande para ser un Pokémon bebé. ¿Podrías sacarlo de mi mesa?",
         }), EvolvedString({
-            LANG_ENG: "This Pokémon is really quite energetic!",
+            LANG_ESP: "Oh, vaya, lo siento Sa-- quiero decir, Profesor Oak. Es que...",
         }), EvolvedString({
-            LANG_ENG: "...However, it's also quite large, for a baby. Would you mind getting it off my table?",
+            LANG_ESP: "Yo...{w=0.5} ¿En se--",
         }), EvolvedString({
-            LANG_ENG: "Oh, shoot, sorry Sa-- I mean, Professor Oak. I'm just...",
+            LANG_ESP: "No me estás jugando una broma, ¿verdad?",
         }), EvolvedString({
-            LANG_ENG: "I--{w=0.5}Wha--",
+            LANG_ESP: "No le estoy jugando una broma a nadie.{w=0.5} Ahora está bajo tu cuidado.",
         }), EvolvedString({
-            LANG_ENG: "You're not pulling my leg, are you?",
+            LANG_ESP: "¡MUY BIEN!",
         }), EvolvedString({
-            LANG_ENG: "I am not pulling anybody's leg.{w=0.5} It's in your care now.",
+            LANG_ESP: "¡¿Un [starter_name]?!{w=0.5} ¡Hoy es mi día de suerte!",
         }), EvolvedString({
-            LANG_ENG: "ALL RIGHT!",
+            LANG_ESP: "No sabía qué esperar, pero de alguna manera todo salió mejor de lo que imaginé.",
         }), EvolvedString({
-            LANG_ENG: "",
+            LANG_ESP: "¡Gracias dioses! Sabía que me estaban cuidando.",
         }), EvolvedString({
-            LANG_ENG: " ",
+            LANG_ESP: "¡Buen Pokémon, [first_name]!",
         }), EvolvedString({
-            LANG_ENG: "?!{w=0.5} Today is my lucky day!",
+            LANG_ESP: "¡Gracias!{w=0.5} En realidad, siempre quise uno así. ¿Tú también conseguiste el que querías?",
         }), EvolvedString({
-            LANG_ENG: "I didn't know what to expect, but everything somehow turned out better than I could have imagined.",
+            LANG_ESP: "¡Por supuesto que sí!{w=0.5} ¡Saluda a Bulbasaur!",
         }), EvolvedString({
-            LANG_ENG: "Thank you! I knew the gods were looking after me!",
+            LANG_ESP: "Tu [starter_name] debería jugar con mi Bulbasaur alguna vez.",
         }), EvolvedString({
-            LANG_ENG: "Nice Pokémon, ",
+            LANG_ESP: "Es natural que nuestros Pokémon sean mejores amigos, ¡igual que sus Entrenadores!",
         }), EvolvedString({
-            LANG_ENG: "!",
+            LANG_ESP: "¿Desde cuándo somos mejores ami--",
         }), EvolvedString({
-            LANG_ENG: "Thanks!{w=0.5} I actually always wanted one. Did you get a Pokémon you wanted, too?",
+            LANG_ESP: "¿Te tocó un [starter_name], [first_name]?{w=0.5} ¡JA! ¡Esto es perfecto!",
         }), EvolvedString({
-            LANG_ENG: "You bet I did!{w=0.5} Say hello to Bulbasaur!",
+            LANG_ESP: "Voy a arrepentirme de preguntar esto, pero... {w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "Your ",
+            LANG_ESP: " ¿Qué tiene de malo un [starter_name]?",
         }), EvolvedString({
-            LANG_ENG: " should play with my Bulbasaur sometime.",
+            LANG_ESP: "Oh, nada en realidad...",
         }), EvolvedString({
-            LANG_ENG: "It's only natural that our Pokémon should be best friends like their Trainers!",
+            LANG_ESP: "¡Excepto que no es tan raro como mi {i}Eevee!{/i} ¡Ja, ja, ja, ja!",
         }), EvolvedString({
-            LANG_ENG: "Since when were we best fri--",
+            LANG_ESP: "¿Qué?",
         }), EvolvedString({
-            LANG_ENG: "You got ",
+            LANG_ESP: "¡Debe ser un castigo divino!",
         }), EvolvedString({
-            LANG_ENG: " ",
+            LANG_ESP: "Nunca me vas a ganar, ¡ni siquiera en sorteos! ¡Ja, ja!",
         }), EvolvedString({
-            LANG_ENG: ", ",
+            LANG_ESP: "¡Una vez que mi Eevee evolucione, podré vencer cualquier equipo que intentes formar contra mí! ¡No tienes ninguna posibilidad!",
         }), EvolvedString({
-            LANG_ENG: "?{w=0.5} HA! That's perfect!",
+            LANG_ESP: "Claro, si quieres evolucionar tu Eevee para vencer al equipo de un entrenador en particular, adelante.",
         }), EvolvedString({
-            LANG_ENG: "I'm going to regret asking this, but... {w=0.5}{nw}",
+            LANG_ESP: "¡Hey! ¡Ahora vamos a probar a nuestros nuevos Pokémon!{w=0.5} ¡Te reto a un combate!",
         }), EvolvedString({
-            LANG_ENG: "What's wrong with ",
+            LANG_ESP: "¡Blue! ¡Este no es el momento ni el lugar para eso!",
         }), EvolvedString({
-            LANG_ENG: " ",
+            LANG_ESP: "Bah. Como sea, mi Pokémon se ve mucho más fuerte de todos modos.",
         }), EvolvedString({
-            LANG_ENG: "?",
+            LANG_ESP: "Hey, déjalo en paz!{w=0.5} ¡No está bien acosar a los demás!",
         }), EvolvedString({
-            LANG_ENG: "Oh, nothing really...",
+            LANG_ESP: "Oh, ehh, yo...",
         }), EvolvedString({
-            LANG_ENG: "Except it's not nearly as rare as my {i}Eevee!{/i} Ha ha ha ha!",
+            LANG_ESP: "¡Y para tu información, ganar batallas no se trata solo de tener la ventaja de tipo!",
         }), EvolvedString({
-            LANG_ENG: "Wha?",
+            LANG_ESP: "Solo ignóralo.{w=0.5} ¿Qué te toco, May?",
         }), EvolvedString({
-            LANG_ENG: "It must be divine retribution!",
+            LANG_ESP: "¡Un Torchic!{w=0.5} Me encantan los Pokémon de Fuego, así que ella y yo seremos mejores amigas, ¡tengo ese presentimiento!",
         }), EvolvedString({
-            LANG_ENG: "You're never gonna beat me, even at random draws! Ha ha!",
+            LANG_ESP: "¡Ja, ja! ¡Un Torchic te queda de perlas, May!{w=0.5} De hecho, tu moño me hacen acordar a sus cabecitas peludas.",
         }), EvolvedString({
-            LANG_ENG: "Once this Eevee evolves, I'll be able to beat any kind of team you try to set up against me! You're powerless!",
+            LANG_ESP: "¡Oye... tienes razón!",
         }), EvolvedString({
-            LANG_ENG: "I mean, sure, if you want to evolve your Eevee to beat one particular trainer's team, knock yourself out.",
+            LANG_ESP: "Escuchaste eso, Torchic? ¡Esto es nuestro destino!{w=0.5} ¡Estábamos destinadas a estar juntas!",
         }), EvolvedString({
-            LANG_ENG: "Yo! Let's check out our Pokémon!{w=0.5} Come on, I'll take you on!",
+            LANG_ESP: "¿Conseguieron iniciales? ¡Suertudaas!",
         }), EvolvedString({
-            LANG_ENG: "Blue! This isn't the time or place for that!",
+            LANG_ESP: "Los iniciales son geniales, pero cualquier Pokémon puede ser genial con el entrenador adecuado.{w=0.5} ¿Qué Pokémon consiguieron ustedes?",
         }), EvolvedString({
-            LANG_ENG: "Psh. Whatever, my Pokémon looks a lot stronger anyway!",
+            LANG_ESP: "¡Un Cleffa!{w=0.5} Es un tipo de ternura diferente a mi Miltank, ¡pero la aceptaré!",
         }), EvolvedString({
-            LANG_ENG: "Hey, leave him alone!{w=0.5} It's not nice to bully others!",
+            LANG_ESP: "Escuché que estos pequeños son realmente raros.",
         }), EvolvedString({
-            LANG_ENG: "Oh. I, uh...",
+            LANG_ESP: "Conseguí un pequeño y adorable Numel.{w=0.5} Estoy tomando las clases electivas de Fuego y Tierra, ¡así que esto es perfecto!",
         }), EvolvedString({
-            LANG_ENG: "And for your information, there's a lot more to winning battles than type advantage!",
+            LANG_ESP: "Mi familia en Lavacalda tenía montones de estos, pero por alguna razón, nunca tuve uno. No será el mejor en batalla, pero aun así, lo adoro.",
         }), EvolvedString({
-            LANG_ENG: "Just ignore him.{w=0.5} What'd you get, May?",
+            LANG_ESP: "¿De veras? ¿No es uno de los pocos Pokémon en el mundo que puede aprender Estallido?",
         }), EvolvedString({
-            LANG_ENG: "A Torchic!{w=0.5} I love Fire-types so she and I are gonna be best buds, I just know it!",
+            LANG_ESP: "No sé todo lo que debería sobre Pokémon de Fuego, pero ¿ese movimiento no es buenísimo?",
         }), EvolvedString({
-            LANG_ENG: "Ha ha! A Torchic really suits you, May!{w=0.5} I mean, your bow already kinda reminds me of their fuzzy heads.",
+            LANG_ESP: "¡Claro!{w=0.5} Pero, quiero decir, los Camerupt son {i}realmente{/i} lentos. Aun así, ¡son súper divertidos para acurrucarse!",
         }), EvolvedString({
-            LANG_ENG: "Hey... you're right!",
+            LANG_ESP: "Entonces... ¿vamos a pasar por alto el giro de personalidad en 180 grados de Flannery?",
         }), EvolvedString({
-            LANG_ENG: "You hear that, Torchic? This was fate!{w=0.5} You and me were meant to be!",
+            LANG_ESP: "... ¿Solo se va a quedar merodeando?",
         }), EvolvedString({
-            LANG_ENG: "You guys got starters? Luckyyy!",
+            LANG_ESP: "¿Qué hay de ti, Hilbert?",
         }), EvolvedString({
-            LANG_ENG: "Starters are pretty cool, but every Pokémon can be great with the right trainer.{w=0.5} What Pokémon did you guys get?",
+            LANG_ESP: "¿Ah?",
         }), EvolvedString({
-            LANG_ENG: "A Cleffa!{w=0.5} It's a different kinda cute compared to my Miltank, but I'll take it!",
+            LANG_ESP: "Oh...{w=0.5} Solo obtuve un Cubchoo.",
         }), EvolvedString({
-            LANG_ENG: "I heard these little tykes are really rare.",
+            LANG_ESP: "Hey, un Pokémon de Teselia.{w=0.5} Territorio antiguo para ti, ¿eh?",
         }), EvolvedString({
-            LANG_ENG: "I got a cute li'l Numel.{w=0.5} I'm taking the Fire and Ground electives, so this is just great!",
+            LANG_ESP: "¡Ay, los Cubchoo son tan adorables...!",
         }), EvolvedString({
-            LANG_ENG: "My family back in Lavaridge had tons of these. Somehow, I never got one. Might not be the best in battle, but I still love him.",
+            LANG_ESP: "Hasta que se convierten en Beartic.",
         }), EvolvedString({
-            LANG_ENG: "Really? Isn't it one of the few Pokémon in the world that can learn Eruption?",
+            LANG_ESP: "¿Vas a evolucionar a tu Cubchoo?",
         }), EvolvedString({
-            LANG_ENG: "I don't know all there is to know about Fire Pokémon, but isn't that move super good?",
+            LANG_ESP: "Probablemente.",
         }), EvolvedString({
-            LANG_ENG: "Sure!{w=0.5} But, I mean, Camerupt are {i}really{/i} slow. Still, they're super-fun to cuddle with!",
+            LANG_ESP: "Aw, que mal...",
         }), EvolvedString({
-            LANG_ENG: "So... are we just going to overlook Flannery's 180-degree personality switch?",
+            LANG_ESP: "¡No puedo esperar para jugar con mi Torchic!{w=0.5} ¡Ella se va a divertir mucho con mi Nincada cuando llegue!",
         }), EvolvedString({
-            LANG_ENG: "...Just going to lurk, huh?",
+            LANG_ESP: "¿Podemos traer nuestros Pokémon de casa?",
         }), EvolvedString({
-            LANG_ENG: "What about you, Hilbert?",
+            LANG_ESP: "El Profesor dijo que no importa qué otros Pokémon tengamos en nuestro equipo, así que sí.",
         }), EvolvedString({
-            LANG_ENG: "Huh?",
+            LANG_ESP: "Mañana por la mañana me enviarán mi Dratini y Helioptile.",
         }), EvolvedString({
-            LANG_ENG: "Oh...{w=0.5} I got a Cubchoo.",
+            LANG_ESP: "Es tan difícil conseguir que envíen cosas a Kobukan, pero ahorré algo de dinero hace un tiempo, así que deberíamos estar bien.",
         }), EvolvedString({
-            LANG_ENG: "Hey, a Unova 'mon.{w=0.5} Old territory for you, right?",
+            LANG_ESP: "¡Dímelo a mí! ¿Sabes cuánto cuesta encontrar una Piedra Lunar en esta región? ¡Tal vez sea más barato volar a Teselia.",
         }), EvolvedString({
-            LANG_ENG: "Aw, Cubchoo are so adorable!",
+            LANG_ESP: "Bueno, la industria minera está--",
         }), EvolvedString({
-            LANG_ENG: "...At least until they become Beartic.",
+            LANG_ESP: "¿Qué siguen haciendo todos aquí?{w=0.5} La clase ya termino, ya pueden retirarse.",
         }), EvolvedString({
-            LANG_ENG: "Hey, are you gonna evolve your Cubchoo?",
+            LANG_ESP: "Mmm, dulce libertad!{w=0.5} ¿Qué quieren hacer ahora?",
         }), EvolvedString({
-            LANG_ENG: "Probably.",
+            LANG_ESP: "Lo siento, pero tengo planes.{w=0.5} Brendan dijo que tenía hambre y quería que nos encontráramos en la cafetería después de clases.",
         }), EvolvedString({
-            LANG_ENG: "Aw, that's too bad...",
+            LANG_ESP: "¡Pero si acabamos de almorzar!",
         }), EvolvedString({
-            LANG_ENG: "I can't wait to play with my Torchic!{w=0.5} She's gonna have so much fun with my Nincada when she gets here!",
+            LANG_ESP: "¿Van a seguir atiborrándose?{w=0.5} ¡Van terminar a engordando!",
         }), EvolvedString({
-            LANG_ENG: "We can bring our Pokémon here from home?",
+            LANG_ESP: "Bueno, {i}yo{/i} no tengo hambre, pero Brendan quiere que vaya con él, así que...{w=0.5} A menos que quieran acompañarme.",
         }), EvolvedString({
-            LANG_ENG: "The Professor said that it doesn't matter what other Pokémon we have in our party, so yeah.",
+            LANG_ESP: "Nah, estoy bien. {w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "I'm getting my Dratini and Helioptile sent here tomorrow morning.",
+            LANG_ESP: "¡Seguro que [first_name] y yo podemos encontrar algo más que hacer!",
         }), EvolvedString({
-            LANG_ENG: "It's so hard to get anything shipped into Kobukan, but I put some money aside a while ago, so we should be fine.",
+            LANG_ESP: "¿Eh?",
         }), EvolvedString({
-            LANG_ENG: "Tell me about it! Do you know how much it costs to find a Moon Stone in this region? It might actually be cheaper to just fly to Unova!",
+            LANG_ESP: "Parece que acabas de decidir algo por ti misma otra vez.",
         }), EvolvedString({
-            LANG_ENG: "Well, the mining industry is--",
+            LANG_ESP: "Te reto a que me digas que tienes planes hoy.",
         }), EvolvedString({
-            LANG_ENG: "What are you all still standing around for?{w=0.5} Class is over! Go on home already!",
+            LANG_ESP: "... Te tomo el punto.",
         }), EvolvedString({
-            LANG_ENG: "Mmm, sweet freedom!{w=0.5} What do you guys wanna do now?",
+            LANG_ESP: "¡Hey!{w=0.5} ¿Vamos, May?",
         }), EvolvedString({
-            LANG_ENG: "Sorry, I've got plans.{w=0.5} Brendan said he was hungry and wanted me to meet up with him in the cafeteria after classes.",
+            LANG_ESP: "¡Oh, claro!{w=0.5} ¡Que se diviertan, ustedes dos!",
         }), EvolvedString({
-            LANG_ENG: "But we just had lunch!",
+            LANG_ESP: "Llámenme si... {i}necesitan algo{/i}, Leaf. {size=30}Tengo una gran reserva en nuestro dormitorio.{/size}",
         }), EvolvedString({
-            LANG_ENG: "You guys are gonna stuff your faces again?{w=0.5} You're gonna get fat!",
+            LANG_ESP: "{size=30}Es bueno saberlo.{/size}",
         }), EvolvedString({
-            LANG_ENG: "Well, {i}I'm{/i} not hungry, but Brendan wants me to come with him, so...{w=0.5} I mean, unless you guys want to come with me.",
+            LANG_ESP: "Bueno, nos vemos. ¡Adiosin!",
         }), EvolvedString({
-            LANG_ENG: "Nah, I'm okay. {w=0.5}{nw}",
+            LANG_ESP: "Entonces, ¿qué quieres hacer?{w=0.5} Ni siquiera sé qué tipo de cosas te gustan.",
         }), EvolvedString({
-            LANG_ENG: "I'm sure ",
+            LANG_ESP: "Soy un aficionado de salir a correr.",
         }), EvolvedString({
-            LANG_ENG: " and I can find something else to do!",
+            LANG_ESP: "¡Genial!{w=0.5} Yo ni loca voy a hacer eso.",
         }), EvolvedString({
-            LANG_ENG: "Huh?",
+            LANG_ESP: "Umm... {w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "Seems you may have just decided something for yourself again.",
+            LANG_ESP: "¿Quieres pasar el rato en el vestíbulo mientras pensamos a donde ir?",
         }), EvolvedString({
-            LANG_ENG: "I dare you to tell me that you have plans today.",
+            LANG_ESP: "Claro, pero no conozco ningún sitio de por aquí.",
         }), EvolvedString({
-            LANG_ENG: "...Point.",
+            LANG_ESP: "¿A qué te refieres?",
         }), EvolvedString({
-            LANG_ENG: "Yo!{w=0.5} Let's go, May!",
+            LANG_ESP: "Podemos ir {color=#0048ff}al jardín, al Centro de Recreación, al Centro de Investigación,{/color} o...",
         }), EvolvedString({
-            LANG_ENG: "Oh, great!{w=0.5} Have fun, you two!",
+            LANG_ESP: "... ¿Algo de esto te suena familiar?",
         }), EvolvedString({
-            LANG_ENG: "Give me a call if you... {i}need anything{/i}, Leaf. {size=30}I have a massive stash in our dorm.{/size}",
+            LANG_ESP: "Algunos amigos míos hablaron del jardín antes, pero para el resto... {w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "{size=30}Good to know.{/size}",
+            LANG_ESP: "Para ser honesto, mi investigación sobre Kobukan fue más sobre lo académico e histórico que sobre la geografía del lugar.",
         }), EvolvedString({
-            LANG_ENG: "All right! Toodles!",
+            LANG_ESP: "Hmmmm, pensé que tal vez habrías aprendido desde la última vez, pero tal vez tu sentido de la orientación sea innatamente inútil.",
         }), EvolvedString({
-            LANG_ENG: "So, what do you wanna do?{w=0.5} I don't even really know what kind of stuff you like.",
+            LANG_ESP: "Por suerte, ¡me tienes a mí!{w=0.5} Saquemos el viejo y confiable mapa, y echemos un vistazo a la zona.",
         }), EvolvedString({
-            LANG_ENG: "Big fan of running.",
+            LANG_ESP: "Estamos aquí, en el edificio principal arriba del Centro Estudiantil.",
         }), EvolvedString({
-            LANG_ENG: "Great!{w=0.5} I won't be doing that.",
+            LANG_ESP: "¿Ves todos los caminos en el mapa?{w=0.5} Esos son caminos que podemos tomar para llegar a los otros...",
         }), EvolvedString({
-            LANG_ENG: "Umm... {w=0.5}{nw}",
+            LANG_ESP: "Mira, a pesar de la evidencia en contra, {i}sí{/i} sé leer un mapa.",
         }), EvolvedString({
-            LANG_ENG: "Wanna hang out in the lobby while we think of a place to go?",
+            LANG_ESP: "¡Está bien, pero si tienes alguna pregunta sobre la zona en general, solo avísame!",
         }), EvolvedString({
-            LANG_ENG: "Sure, but I don't really know any place to go around here.",
+            LANG_ESP: "",
         }), EvolvedString({
-            LANG_ENG: "What are you talking about?",
+            LANG_ESP: "¿Qué edificios están abiertos para los estudiantes?",
         }), EvolvedString({
-            LANG_ENG: "We can go to {color=#0048ff}the garden, the Recreation Center, the Research Center,{/color} or...",
+            LANG_ESP: "Bueno, en este momento, más o menos todos. Con la excepción del Battle Hall, {color=#0048ff}todos están abiertos durante el día, pero cierran por la noche.{w=0.5} Después de eso, necesitarás un permiso especial.{/color}",
         }), EvolvedString({
-            LANG_ENG: "...Does any of this sound familiar to you?",
+            LANG_ESP: "En resumen, una vez que cierran, voy a tener que esperar hasta mañana para poder entrar.",
         }), EvolvedString({
-            LANG_ENG: "A few friends of mine brought up the garden earlier, but for the rest... {w=0.5}{nw}",
+            LANG_ESP: "Sí, es un poco molesto, pero {color=#0048ff}una vez que cierran, solo podrás quedarte en tu dormitorio.{/color}{w=0.5} Deberías aprovechar el día al máximo antes de que termine el día.",
         }), EvolvedString({
-            LANG_ENG: "Look, my research into Kobukan was more about academics and history than geography.",
+            LANG_ESP: "¿Algo más que quieras saber?",
         }), EvolvedString({
-            LANG_ENG: "Hmmm, I would've thought that maybe you wised up since the last time, but maybe your sense of direction is innately hopeless.",
+            LANG_ESP: "¿Qué actividades hay por aquí??",
         }), EvolvedString({
-            LANG_ENG: "Luckily, you have me!{w=0.5} Let's break out the ol' map and take a look around the area.",
+            LANG_ESP: "¿Hay algo en particular que a todos les guste hacer?",
         }), EvolvedString({
-            LANG_ENG: "We're right here, over at the main building above the Student Center.",
+            LANG_ESP: "No que yo recuerde.{w=0.5}",
         }), EvolvedString({
-            LANG_ENG: "Now you see all the paths on the map?{w=0.5} Those are paths that we can take to get to the other--",
+            LANG_ESP: "Hay muchas cosas para hacer, pero {color=#0048ff}depende de a dónde vayas.{/color}",
         }), EvolvedString({
-            LANG_ENG: "Look, despite the evidence to the contrary, I {i}do{/i} know how to read a map.",
+            LANG_ESP: "{color=#0048ff}Dependiendo de lo que hagas, algunas actividades pueden quitarte un poco de tiempo o ocuparte todo el día.{/color}{w=0.5} Intenta gestionar bien tu tiempo y planifica con antelación lo que vayas a hacer.",
         }), EvolvedString({
-            LANG_ENG: "All right, but if you have any questions about the area in general, just let me know!",
+            LANG_ESP: "O si estás cansado o simplemente te da pereza, {color=#0048ff}puedes volver a tu dormitorio después clases y pasar el resto del día ahí.{/color}",
         }), EvolvedString({
-            LANG_ENG: "",
+            LANG_ESP: "Digo, eso es sólo si {i}realmente{/i} no se te ocurre nada que hacer...{w=0.5} o si no tienes amigos.",
         }), EvolvedString({
-            LANG_ENG: "Which buildings are open to students?",
+            LANG_ESP: "A mí me encantaría salir y hacer cosas, pero esta academia tiene un toque de queda estricto.{w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "Well, right now all of them, more or less. With the exception of the Battle Hall, {color=#0048ff}they're all open to students throughout the day, but they close down at night.{w=0.5} After that, you'll need special permits.{/color}",
+            LANG_ESP: " Así que {color=#0048ff}una vez que sea de noche, no puedes salir del dormitorio.{/color}",
         }), EvolvedString({
-            LANG_ENG: "So basically once they're closed, I'll have to wait until the next day to get in.",
+            LANG_ESP: "Sí, recuerdo que lo mencionaron en la orientación.",
         }), EvolvedString({
-            LANG_ENG: "Yeah, it's kinda lame, but {color=#0048ff}once they're closed, your activities will be limited to your dorm.{/color}{w=0.5} You should really try to make the most out of your day before that.",
+            LANG_ESP: "¿Algo más que quieras saber?",
         }), EvolvedString({
-            LANG_ENG: "Anything else you'd like to know?",
+            LANG_ESP: "¿Qué puedes decirme sobre Ciudad Inspira?",
         }), EvolvedString({
-            LANG_ENG: "What activities are there to do around here?",
+            LANG_ESP: "¿Qué puedes decirme sobre Ciudad Inspira?",
         }), EvolvedString({
-            LANG_ENG: "Is there anything in particular that everyone enjoys?",
+            LANG_ESP: "¡Tiene un montón de tiendas y mercados geniales para visitar!",
         }), EvolvedString({
-            LANG_ENG: "Not that I can think of.{w=0.5}",
+            LANG_ESP: "Es el paraíso de cualquier chica.",
         }), EvolvedString({
-            LANG_ENG: "There's plenty of stuff to do, but {color=#0048ff}it all depends on where you decide to visit.{/color}",
+            LANG_ESP: "Pero para alguien como tú...{w=0.5} Yo esperaría {color=#0048ff}hasta conocer bien el campus.{/color}",
         }), EvolvedString({
-            LANG_ENG: "{color=#0048ff}Depending on what you do, some activities may take a little bit of time out of your day, or it may take up your entire day.{/color}{w=0.5} Try to manage your time well and plan ahead what you're going to be doing.",
+            LANG_ESP: "De todas formas, no se me ocurre ninguna razón para ir a la ciudad por ahora.",
         }), EvolvedString({
-            LANG_ENG: "Or if you're tired or just feeling lazy, you can {color=#0048ff}go back to your dorm after classes and just kill the rest of your time there.{/color}",
+            LANG_ESP: "¿Algo más que quieras saber?",
         }), EvolvedString({
-            LANG_ENG: "I mean, that's only if you {i}really{/i} can't think of anything to do...{w=0.5} or if you have no friends.",
+            LANG_ESP: "Estoy bien.",
         }), EvolvedString({
-            LANG_ENG: "Personally, I'd love to go out and do stuff, but this school has a strict curfew.{w=0.5}{nw}",
+            LANG_ESP: "De acuerdo, lo tengo.{w=0.5} Gracias por la ayuda.",
         }), EvolvedString({
-            LANG_ENG: " So {color=#0048ff}once it's night, you can't leave the dorms.{/color}",
+            LANG_ESP: "¡De nada!",
         }), EvolvedString({
-            LANG_ENG: "Yeah, I remember hearing about that on orientation day.",
+            LANG_ESP: "Bueno, ahora que ya resolvimos eso, ¿a dónde quieres ir?",
         }), EvolvedString({
-            LANG_ENG: "Anything else you'd like to know?",
+            LANG_ESP: "¿Yo?{w=0.25} No dije nada sobre ir a ningún lado.",
         }), EvolvedString({
-            LANG_ENG: "What can you tell me about Inspira City?",
+            LANG_ESP: "¡Oh, no seas tímido! Vamos, vamos, ¡vamos a algún lugar divertido!",
         }), EvolvedString({
-            LANG_ENG: "What can you tell me about Inspira City?",
+            LANG_ESP: "De todas formas, no es como si tuvieras otros planes ahora mismo.",
         }), EvolvedString({
-            LANG_ENG: "It's got all these cool shops and markets to visit!",
+            LANG_ESP: "Ah, ¿por qué no? Tu mandas.",
         }), EvolvedString({
-            LANG_ENG: "It's every girl's paradise.",
+            LANG_ESP: "¡Genial!",
         }), EvolvedString({
-            LANG_ENG: "But for someone like you...{w=0.5} I'd go {color=#0048ff}after I've become familiar enough with the campus.{/color}",
+            LANG_ESP: "Veamos...{w=0.5} ¿qué tal el gimnasio?{w=0.5} Como el Salón Batalla requiere permiso para pelear ahí, apuesto a que podemos ver algunas peleas geniales en el gimnasio.",
         }), EvolvedString({
-            LANG_ENG: "I can't think of any reason to go to the city right now anyway.",
+            LANG_ESP: "Además, parece que te vendría bien un buen entrenamiento.",
         }), EvolvedString({
-            LANG_ENG: "Anything else you'd like to know?",
+            LANG_ESP: "¡Oye!",
         }), EvolvedString({
-            LANG_ENG: "I'm good.",
+            LANG_ESP: "¡Estoy bromeando!{w=0.5} Es obvio que te mantienes en forma. Probablemente vas al gimnasio todos los días, ¿verdad? Seguro terminas todo sudado y jadeando como un Slowpoke cansado.",
         }), EvolvedString({
-            LANG_ENG: "All right, I got it.{w=0.5} Thanks for the help.",
+            LANG_ESP: "Leaf, te lo ruego, quien sea que te enseñó a coquetear, necesitas dejar de escucharle.",
         }), EvolvedString({
-            LANG_ENG: "No problem!",
+            LANG_ESP: "¡Oye, esto no lo saqué de {i}nadie{/i}! ¡Mi técnica es 100\% original de Leaf! ¡De cosecha propia y casera, directo de mi huerto!",
         }), EvolvedString({
-            LANG_ENG: "So, now that we got that all sorted out, where do you want to go?",
+            LANG_ESP: "Tu 'técnica' me da ganas de comer comida rápida.",
         }), EvolvedString({
-            LANG_ENG: "Me?{w=0.25} I didn't say anything about going anywhere.",
+            LANG_ESP: "... ¿Qué sería comida rápida en este contexto?",
         }), EvolvedString({
-            LANG_ENG: "Oh, don't be shy! Come on, come on, let's go somewhere fun!",
+            LANG_ESP: "Mejor no--",
         }), EvolvedString({
-            LANG_ENG: "It's not like you have any other plans right now anyway!",
+            LANG_ESP: "¡No importa, vamos!",
         }), EvolvedString({
-            LANG_ENG: "Oh, why not? You lead the way.",
+            LANG_ESP: "Guau, hay muuucha gente aquí.",
         }), EvolvedString({
-            LANG_ENG: "Awesome!",
+            LANG_ESP: "Supongo que tiene sentido, es un buen lugar para combatir {i}y{/i} hacer ejercicio. Viene bien a todo tipo de personas.",
         }), EvolvedString({
-            LANG_ENG: "Let's see...{w=0.5} how about the gym?{w=0.5} Since the Battle Hall requires permission to battle there, I bet we can catch some cool battles in the gym!",
+            LANG_ESP: "Está un poco lleno,{w=0.5} tal vez deberíamos intentar en otro lugar...",
         }), EvolvedString({
-            LANG_ENG: "Besides, you look like you could use a good workout.",
+            LANG_ESP: "¿Hmm? ¿Qué pasa?",
         }), EvolvedString({
-            LANG_ENG: "Hey!",
+            LANG_ESP: "¡Detén la puerta delantera! ¡¿Ella es la jodida {i}ROSA{/i}?!",
         }), EvolvedString({
-            LANG_ENG: "I'm kidding!{w=0.5} It's obvious that you stay in shape. Probably go to the gym every day, right? And get all gross and sweaty, huffing and puffing like an overexerted Slowpoke?",
+            LANG_ESP: "¿Eh? {w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "Leaf, I'm begging you, whoever taught you how to flirt, you need to stop listening to them.",
+            LANG_ESP: "Oh, sí, lo es. Quiero decir, tomamos juntos la electividad de tipo Eléctrico, ¿verdad?",
         }), EvolvedString({
-            LANG_ENG: "Hey, I don't get this from {i}anyone!{/i} My technique is 100\% a Leaf original! Homegrown and homemade! Fresh from the garden.",
+            LANG_ESP: "¡Qué! ¡Eso es mentira! No hay {i}forma{/i} de que no me diera cuenta.",
         }), EvolvedString({
-            LANG_ENG: "Your 'technique' puts me in the mood for fast food.",
+            LANG_ESP: "¿Eh? {w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "...What's fast food in this context?",
+            LANG_ESP: "Oh, sí, lo es. La conocí antes en mi clase electiva.",
         }), EvolvedString({
-            LANG_ENG: "Let's not--",
+            LANG_ESP: "¡{i}Cállate{/i}! ¡{i}No{/i} lo hiciste!",
         }), EvolvedString({
-            LANG_ENG: "Doesn't matter. Let's go!",
+            LANG_ESP: "Claro que sí.",
         }), EvolvedString({
-            LANG_ENG: "Wow. Looooots of people here.",
+            LANG_ESP: "Bueno... ¡como sea! ¡Voy a hablar con ella!",
         }), EvolvedString({
-            LANG_ENG: "Guess it makes sense. It's a good place to battle {i}and{/i} work out. All kinds would come here.",
+            LANG_ESP: "¿De qué la conoces?",
         }), EvolvedString({
-            LANG_ENG: "It's a bit crowded.{w=0.5} Maybe we should try somewhere...",
+            LANG_ESP: "¿Quién es ella?",
         }), EvolvedString({
-            LANG_ENG: "Hm? What's up?",
+            LANG_ESP: "¡No puede ser! ¿No conoces a Rosa? ¿La Reina de Pokéstar Studios? ¡¿Una de las actrices más talentosas {i}de todos los tiempos{/i}?!",
         }), EvolvedString({
-            LANG_ENG: "Hold the front door. Is that freakin' {i}ROSA?{/i}",
+            LANG_ESP: "Bueno, no vi muchas películas en Pueblo Paleta. Y la mayoría de las que vi estaba en VHS, las cuales supongo que son un poco más viejas que ella.",
         }), EvolvedString({
-            LANG_ENG: "Huh? {w=0.5}{nw}",
+            LANG_ESP: "¡Oh, Dios mío, tengo {i}tantas{/i} películas que mostrarte! Es legendaria. Hay una escena en {i}Cronodisea{/i} donde su personaje queda enterrado bajo escombros, le arrancan un brazo...",
         }), EvolvedString({
-            LANG_ENG: "Oh, yeah, it is. I mean, we took the Electric elective together before, right?",
+            LANG_ESP: "¡Y grita y llora de forma {i}tan realista{/i} que si el volumen de tu televisor está demasiado alto, tus vecinos llamarán a la policía!",
         }), EvolvedString({
-            LANG_ENG: "What! That's a lie! There's {i}no way{/i} I didn't notice her.",
+            LANG_ESP: "Eso es... ¿genial?",
         }), EvolvedString({
-            LANG_ENG: "Huh? {w=0.5}{nw}",
+            LANG_ESP: "Oh, y una vez, cuando estaba filmando {i}Amor a Primera Vista{/i}, ¡el actor que interpretaba a su interés amoroso {i}realmente se enamoro de ella!{/i} ¡Incluso le propuso matrimonio!",
         }), EvolvedString({
-            LANG_ENG: "Oh, yeah, it is. I met her earlier, in my elective class.",
+            LANG_ESP: "Lo leí en una revista.",
         }), EvolvedString({
-            LANG_ENG: "Shut {i}up!{/i} You did {i}not!{/i}",
+            LANG_ESP: "Aja...",
         }), EvolvedString({
-            LANG_ENG: "Totally did.",
+            LANG_ESP: "Espero más que un 'aja' por presentarte a la mejor actriz que haya existido.",
         }), EvolvedString({
-            LANG_ENG: "Well... whatever! I'm going to talk to her!",
+            LANG_ESP: "Es solo que... tiendo a preferir películas como las de Diantha, ¿sabes?",
         }), EvolvedString({
-            LANG_ENG: "How do you know her?",
+            LANG_ESP: "{w=0.5}.{w=0.5}.{w=0.5}.",
         }), EvolvedString({
-            LANG_ENG: "Who's that?",
+            LANG_ESP: "¿Como... películas antiguas en blanco y negro?",
         }), EvolvedString({
-            LANG_ENG: "You're kidding me! You don't know Rosa? The Queen of Pokéstar Studios? One of the most talented actresses {i}ever?{/i}",
+            LANG_ESP: "¿Cuántos años crees que tiene? No, me refiero a un cine moderno.",
         }), EvolvedString({
-            LANG_ENG: "Well, I didn't watch many movies back in Pallet Town. And most of what I watched was on VHS, which I'm guessing is a bit older than her.",
+            LANG_ESP: "Aunque supongo que también me gustan los viejos westerns de nieve de Brycen.",
         }), EvolvedString({
-            LANG_ENG: "Oh my god, I have {i}so{/i} many movies to show you. She's legendary. There's one scene where her character in {i}Timegate Traveler{/i} gets buried under rubble, and her arm is torn off--",
+            LANG_ESP: "{w=0.5}.{w=0.5}.{w=0.5}.",
         }), EvolvedString({
-            LANG_ENG: "--and she screams and cries {i}so realistically{/i} that if the volume on your TV is too high, your neighbors will call the cops on you!",
+            LANG_ESP: "Voy a ser la mujer más grande de esta conversación y te dejaré con tu pésimo gusto.",
         }), EvolvedString({
-            LANG_ENG: "That's... that's great?",
+            LANG_ESP: "¡Oh! ¡Esa es otra de sus películas! '¡La Mujer Gigante!'",
         }), EvolvedString({
-            LANG_ENG: "Oh, and this one time, when she was filming {i}Love and Battles{/i}, the guy who played her love interest {i}actually fell in love with her!{/i} He even proposed!",
+            LANG_ESP: "Incluso sin haberla visto, puedo decir que es el fetiche del director pobremente disimulado.",
         }), EvolvedString({
-            LANG_ENG: "I read about it in a magazine.",
+            LANG_ESP: "Sí, en realidad lo era...",
         }), EvolvedString({
-            LANG_ENG: "Huh.",
+            LANG_ESP: "¡Bueno, como sea! ¡Voy a hablar con Rosa! ¡Nos volveremos las mejores amigas, y me pondrá como extra en sus películas!",
         }), EvolvedString({
-            LANG_ENG: "I better get more than a 'huh' for introducing you to the best actress who ever lived.",
+            LANG_ESP: "Qué oportunista.",
         }), EvolvedString({
-            LANG_ENG: "It's just... I tend to prefer flicks like Diantha's more, you know?",
+            LANG_ESP: "¡Rosa!",
         }), EvolvedString({
-            LANG_ENG: "Like... old black and white films?",
+            LANG_ESP: "¿Eh?",
         }), EvolvedString({
-            LANG_ENG: "How old do you think she is? No, modern stuff.",
+            LANG_ESP: "Oh, hola. Debes ser una fan.",
         }), EvolvedString({
-            LANG_ENG: "Although I guess I do like Brycen's old snowball westerns, too.",
+            LANG_ESP: "¡Totalmente, soy tu mayor fan! ¡Oh, Dios mío! ¡Es Rosa!{w=0.25} ¡Eres realmente tú!",
         }), EvolvedString({
-            LANG_ENG: "I'm going to be the bigger woman here and let you have awful taste.",
+            LANG_ESP: "[first_name], ¡¿puedes creerlo?!",
         }), EvolvedString({
-            LANG_ENG: "Oh! That's another one of her films! 'The Giant Woman!'",
+            LANG_ESP: "¡Seguro que no!",
         }), EvolvedString({
-            LANG_ENG: "Even without having seen it, I can tell that's the director's barely-disguised fetish.",
+            LANG_ESP: "He visto {i}todas{/i} tus entrevistas! ¡Eres increíble! ¿Es cierto que cuando estabas filmando {i}Juncobot{/i}, la Policía Internacional visitó el estudio porque pensaron que {i}realmente eras{/i} una ladrona de joyas?",
         }), EvolvedString({
-            LANG_ENG: "Yeah, it really was...",
+            LANG_ESP: "¡Ja, ja! ¡Quizás!",
         }), EvolvedString({
-            LANG_ENG: "Well, whatever! I'm going to go talk to Rosa! And then we'll be best friends, and she'll cast me as an extra in her movies!",
+            LANG_ESP: "... Pero, por razones legales, no.",
         }), EvolvedString({
-            LANG_ENG: "How mercenary.",
+            LANG_ESP: "¡Soy como, tu mayor fan {i}de todos los tiempos{/i}! ¿Ya no lo había dicho? No importa, sigue siendo verdad.",
         }), EvolvedString({
-            LANG_ENG: "Rosa!",
+            LANG_ESP: "¿Qué haces aquí? ¿Eres una oradora invitada? ¿Te contrataron para dar clases?",
         }), EvolvedString({
-            LANG_ENG: "Huh?",
+            LANG_ESP: "Jaja, ¿qué? No. Solo tengo veinte años, ¿sabes? Solo estoy estudiando aquí--",
         }), EvolvedString({
-            LANG_ENG: "Oh, hi! You must be a fan.",
+            LANG_ESP: "¡{i}AH!{/i}! ¡¿Estás inscrita aquí?!{w=0.5} ¡Pellízquenme, estoy soñando!",
         }), EvolvedString({
-            LANG_ENG: "I totally am! Your biggest fan! Oh, my gosh! It's Rosa!{w=0.25} It's really you!",
+            LANG_ESP: "Oye, ¿en qué dormitorio vives? ¿Puedo ver tu habitación alguna vez? ¿Qué tal ahora?",
         }), EvolvedString({
-            LANG_ENG: "",
+            LANG_ESP: "Bueno, {b}ahora{/b} es momento de intervenir.",
         }), EvolvedString({
-            LANG_ENG: ", can you believe it?!",
+            LANG_ESP: "Leaf,{w=0.5} calmate.",
         }), EvolvedString({
-            LANG_ENG: "Sure can't!",
+            LANG_ESP: "Pero...",
         }), EvolvedString({
-            LANG_ENG: "I've seen {i}all{/i} your interviews! You're amazing! Is it really true that when you were filming {i}Full Metal Cop{/i}, the International Police visited the studio, because they thought you {i}actually were{/i} an infamous jewel thief?",
+            LANG_ESP: "Nah, está bien.{w=0.5} Aprecio el entusiasmo, pero soy solo una estudiante aquí, ¡como tú!",
         }), EvolvedString({
-            LANG_ENG: "Ha ha! Maybe!",
+            LANG_ESP: "Si no estoy frente a una pantalla verde, no hay razón para tratarme diferente a los demás.",
         }), EvolvedString({
-            LANG_ENG: "...But, for legal reasons, no.",
+            LANG_ESP: "Oh, Dios, lo siento.",
         }), EvolvedString({
-            LANG_ENG: "I'm like, your biggest fan {i}ever{/i}! Did I say that? Whatever, it's still true.",
+            LANG_ESP: "Es solo que nunca pensé que mi ídola estaría tan cerca de mí, y hablándome cara a cara...",
         }), EvolvedString({
-            LANG_ENG: "What are you doing here? Are you a guest speaker? Are you being hired to teach a class?",
+            LANG_ESP: "¡No te preocupes!",
         }), EvolvedString({
-            LANG_ENG: "Hah hah, what? No? I'm only twenty, you know. I'm just attending--",
+            LANG_ESP: "... Ah, hola, [first_name].",
         }), EvolvedString({
-            LANG_ENG: "{i}*GASP*{/i} You're enrolled here?!{w=0.5} Pinch me, I'm dreaming!",
+            LANG_ESP: "Hola.",
         }), EvolvedString({
-            LANG_ENG: "Hey, what dorm do you live in? Can I see your room sometime? Like, right now, maybe?",
+            LANG_ESP: "Supongo que ahora entiendes por qué estaba un poco rara en clase antes, ¿eh?",
         }), EvolvedString({
-            LANG_ENG: "Alright, {b}now{/b} it's time to intervene.",
+            LANG_ESP: "No diría eso, pero si que {i}explica{/i} un par de cosas.",
         }), EvolvedString({
-            LANG_ENG: "Leaf.{w=0.5} Be cool.",
+            LANG_ESP: "Bueno, señorita, creo que no escuché bien tu nombre.s{w=0.5} ¿Me lo podrías repetir?",
         }), EvolvedString({
-            LANG_ENG: "But--",
+            LANG_ESP: "¡Oh, soy Leaf! Leaf es mi nombre. ¡Y este es [first_name]! Puedes llamarlo [first_name]. Es un nombre un poco tonto, ¿verdad?",
         }), EvolvedString({
-            LANG_ENG: "Nah, it's okay.{w=0.5} I appreciate the enthusiasm, but I'm just a student here, like you!",
+            LANG_ESP: "¿Tonto? Um, yo no diría... O sea, eso no es lo primero que diría...",
         }), EvolvedString({
-            LANG_ENG: "If I'm not in front of a green screen, there's no reason to treat me any differently to anyone else.",
+            LANG_ESP: "Lo sé! ¡{i}Suuuuper{/i} tonto! ¿Ja,ja,ja? ¡Ja!",
         }), EvolvedString({
-            LANG_ENG: "Oh gosh, I'm sorry.",
+            LANG_ESP: "Es una regla implícita no tirar a tus amigos debajo del autobús, Leaf. {w=0.5}{cps=*0.2}{nw}",
         }), EvolvedString({
-            LANG_ENG: "I just never thought my idol would wind up so close to me, and talking to me face-to-face no less...",
+            LANG_ESP: "{color=#f00}Voy a recordar esto.{/color}",
         }), EvolvedString({
-            LANG_ENG: "Don't worry about it!",
+            LANG_ESP: "¡Guau, miren la hora!{w=0.5}{nw}",
         }), EvolvedString({
-            LANG_ENG: "...Hi, ",
+            LANG_ESP: " Se termino mi descanso, ¡debo de volver a mi entrenamiento! Cada gramo extra son cinco semanas más de trabajo para el equipo de CGI.",
         }), EvolvedString({
-            LANG_ENG: ".",
+            LANG_ESP: "Lo siento, chicos, tengo que salir corriendo...{w=0.5} ¡Literalmente!",
         }), EvolvedString({
-            LANG_ENG: "Hey.",
+            LANG_ESP: "¡Ja! ¡Esa fue buena, Rosa! {w=0.5} ¡Ja,ja,ja! ¡Me duele el estómago de la risa!",
         }), EvolvedString({
-            LANG_ENG: "I guess you get why I was a bit weird in class before, huh?",
+            LANG_ESP: "Bueno, encantada de conocerte, Leaf. {w=0.5} ¡Nos vemos!",
         }), EvolvedString({
-            LANG_ENG: "I wouldn't say that, but it {i}does{/i} explain a couple things.",
+            LANG_ESP: "Parece ser alguien agradable.",
         }), EvolvedString({
-            LANG_ENG: "Well, Miss, I don't think I caught your name.{w=0.5} Refresh me?",
+            LANG_ESP: "¡Ella es {i}muy{/i} agradable!",
         }), EvolvedString({
-            LANG_ENG: "Oh, I'm Leaf! Leaf's my name. And this is ",
+            LANG_ESP: "Escuche mcuhas historias sobre actores que son unos completos idiotas fuera de la pantalla, pero Rosa obviamente no es así.",
         }), EvolvedString({
-            LANG_ENG: "! You can call him ",
+            LANG_ESP: "Si pudiera terminar el año siendo amiga de Rosa, sería tan feliz.",
         }), EvolvedString({
-            LANG_ENG: ". Kinda a silly name, right?",
+            LANG_ESP: "Parece que ustedes dos se llevarían bien.",
         }), EvolvedString({
-            LANG_ENG: "Silly? Um, I wouldn't-- I mean, that's not the first thing I would say...",
+            LANG_ESP: "¿De verdad lo crees?",
         }), EvolvedString({
-            LANG_ENG: "I know! {i}Soooo{/i} silly! Hahahahaha? Ha!",
+            LANG_ESP: "Claro, solo tal vez deberías bajar un poco la intensidad del fanatismo.",
         }), EvolvedString({
-            LANG_ENG: "It's an unspoken rule to not throw your friends under the bus, Leaf. {w=0.5}{cps=*0.2}{nw}",
+            LANG_ESP: "¡¿Disculpa?! ¡Yo no...!",
         }), EvolvedString({
-            LANG_ENG: "{color=#f00}I'll remember this.{/color}",
+            LANG_ESP: ".{w=0.25}.{w=0.25}.{w=0.25}Intentaré controlarlo.",
         }), EvolvedString({
-            LANG_ENG: "Whoa, look at the time!{w=0.5}{nw}",
+            LANG_ESP: "Entonces, ¿todavía quieres quedarte aquí?{w=0.5} Se ve bastante lleno.",
         }), EvolvedString({
-            LANG_ENG: " Break's over. I need to get back to my workout! Every ounce of extra weight is an extra five weeks for the CGI team.",
+            LANG_ESP: "Sí...{w=0.5} Definitivamente no.",
         }), EvolvedString({
-            LANG_ENG: "Sorry, guys, I gotta run...{w=0.5} literally!",
+            LANG_ESP: "Probemos otro lugar.",
         }), EvolvedString({
-            LANG_ENG: "Ha! That's a good one, Rosa!{w=0.5} Ha ha ha! My sides!",
+            LANG_ESP: "Terminas deambulado por el campus durante un rato, hablando de nada en particular con Leaf.",
         }), EvolvedString({
-            LANG_ENG: "All right, nice meeting you, Leaf.{w=0.5} Catch you later!",
+            LANG_ESP: "Bajo la cobertura de esta charla trivial, la noche cae.",
         }), EvolvedString({
-            LANG_ENG: "She seems nice.",
+            LANG_ESP: "¿Ya es esa hora del día?{w=0.5} Mierda, tenemos que volver a los dormitorios antes de meternos en problemas.",
         }), EvolvedString({
-            LANG_ENG: "She is {i}so{/i} nice!",
+            LANG_ESP: "Estaba pensando... ¿es realmente un gran problema si nos atrapan afuera después del anochecer?",
         }), EvolvedString({
-            LANG_ENG: "I've heard all these horror stories about actors being huge jerks offscreen, but Rosa obviously isn't anything like that!",
+            LANG_ESP: "Si lo haces muy seguido, la academia podría suspenderte o incluso expulsarte.{w=0.5} Personalmente, me encantaría salir y hacer cosas, pero con tanto tiempo y dinero en juego, simplemente no vale la pena.",
         }), EvolvedString({
-            LANG_ENG: "If I could just end up being friends with Rosa by the time I graduate, I would be so happy.",
+            LANG_ESP: "De todos modos, Kobukan es súper elegante y todo eso, pero Ciudad Inspira está llena de delincuentes y matones que a veces merodean por la noche.",
         }), EvolvedString({
-            LANG_ENG: "You guys seem like you'd get along well.",
+            LANG_ESP: "Aunque mis habilidades en batalla son de élite y puedo derrotar a cualquiera que intente algo, tú quizás deberías mantenerte alejado.",
         }), EvolvedString({
-            LANG_ENG: "You really think so?",
+            LANG_ESP: "Sí, sí, soy muy delicadito.",
         }), EvolvedString({
-            LANG_ENG: "Sure. Just maybe lay off the brown-nosing a little.",
+            LANG_ESP: "...{w=0.5} ¡Oh, mira la hora! No quería extenderme tanto con eso.",
         }), EvolvedString({
-            LANG_ENG: "Excuse me?! I don't--",
+            LANG_ESP: "Fue divertido mientras duró, pero realmente deberíamos regresar.",
         }), EvolvedString({
-            LANG_ENG: "",
+            LANG_ESP: "or mí está bien. Gracias por el recorrido y, eh, por el tutorial sobre cómo usar mapas.",
         }), EvolvedString({
-            LANG_ENG: "I'll try to keep it under control.",
+            LANG_ESP: "¡Buenas noches!",
         }), EvolvedString({
-            LANG_ENG: "So, do you still want to stay here?{w=0.5} This place looks packed.",
+            LANG_ESP: "Leaf no bromeaba.{w=0.5} Este lugar parece un pueblo fantasma cuando se acerca la hora del toque de queda.",
         }), EvolvedString({
-            LANG_ENG: "Yeah, definitely not.",
+            LANG_ESP: "Phew!",
         }), EvolvedString({
-            LANG_ENG: "Let's try somewhere else.",
+            LANG_ESP: "Por fin de vuelta.{w=0.5} Es solo el primer día de clases y ya siento que podría dormir el resto de la semana.",
         }), EvolvedString({
-            LANG_ENG: "You end up wandering around the campus for a while, talking about nothing in particular.",
+            LANG_ESP: "¡Hola, chicos, ya volvi!",
         }), EvolvedString({
-            LANG_ENG: "Under the cover of idle chatter, night descends.",
+            LANG_ESP: "¡Pi-KA-chu!",
         }), EvolvedString({
-            LANG_ENG: "Is it that time of day already?{w=0.5} Shoot, we need to head back to the dorms before we get in trouble.",
+            LANG_ESP: "¡Hola, [pika_name]! ¿Me extrañaste?",
         }), EvolvedString({
-            LANG_ENG: "I was wondering... is it that big a deal if we're caught outside after dark?",
+            LANG_ESP: "Pika-pika.",
         }), EvolvedString({
-            LANG_ENG: "Do it too often, and the Academy could suspend or even expel you.{w=0.5} Personally, I'd love to go out and do stuff, but with so much time and money at stake, it's just not worth it.",
+            LANG_ESP: "Yo diría que sí te extrañó.{w=0.5} Desde que volví, no ha dejado de mirar la puerta.",
         }), EvolvedString({
-            LANG_ENG: "Anyway, Kobukan's super-classy and junk, but Inspira's full of delinquents and thugs that wander over at night sometimes.",
+            LANG_ESP: "¡Es como un pequeño robot!",
         }), EvolvedString({
-            LANG_ENG: "Of course, my elite battling skills are more than enough to beat up anyone who tries something, but you might want to stay clear.",
+            LANG_ESP: "Es muy tierno de ver, aunque un poco inquietante.",
         }), EvolvedString({
-            LANG_ENG: "I am very delicate, yes.",
+            LANG_ESP: "En fin, ¿cómo te fue en el día?",
         }), EvolvedString({
-            LANG_ENG: "...Whoops! I didn't mean to ramble on for so long about that.",
+            LANG_ESP: "Considerado todo, estuvo bien.{w=0.5} Conseguí un nuevo Pokémon, así que eso fue bastante genial.",
         }), EvolvedString({
-            LANG_ENG: "It was fun while it lasted, but we should really head back in.",
+            LANG_ESP: "¿Oh? ¿Un nuevo Pokémon? ¡Fantástico!",
         }), EvolvedString({
-            LANG_ENG: "That's fine with me. Thanks for the tour, and, uh, tutorial on how to use maps.",
+            LANG_ESP: "Yo recibí un Fletchling en mi salón con el Profesor Ciprés.",
         }), EvolvedString({
-            LANG_ENG: "G'night!",
+            LANG_ESP: "¡El Profesor Birch me dio un Mudkip! Cuando este pequeño evolucione a Swampert, ¡será uno de los mejores tipo tierra de Hoenn!",
         }), EvolvedString({
-            LANG_ENG: "Leaf wasn't kidding.{w=0.5} This place is like a ghost town once it gets close to curfew.",
+            LANG_ESP: "Comparto clases generales con Hilbert, y dijo que consiguió un Cubchoo. Aunque estoy bastante seguro de que lo va a evolucionar en Beartic lo antes posible.",
         }), EvolvedString({
-            LANG_ENG: "Phew!",
+            LANG_ESP: "Bueno, ¿qué conseguiste tú?",
         }), EvolvedString({
-            LANG_ENG: "Finally back.{w=0.5} It's only the first day of class and I'm already feeling like sleeping the rest of the week away.",
+            LANG_ESP: "¡Yo conseguí un [starter_name]! Lo cual es una locura, porque siempre quise uno cuando era niño.",
         }), EvolvedString({
-            LANG_ENG: "Hey, guys!",
+            LANG_ESP: "¡Parece que tenemos dos Mudkip en este dormitorio ahora!",
         }), EvolvedString({
-            LANG_ENG: "Pi-KA-chu!",
+            LANG_ESP: "¿Qué pasa?",
         }), EvolvedString({
-            LANG_ENG: "Hey, ",
+            LANG_ESP: "Bro, ¡yo también tengo un [starter_name]!",
         }), EvolvedString({
-            LANG_ENG: "! Did ya miss me?",
+            LANG_ESP: "¿En serio? ¡Guau! Las coincidencias entre nosotros no paran de acumularse.",
         }), EvolvedString({
-            LANG_ENG: "Pika-pika.",
+            LANG_ESP: "No puedo creer que tres de nosotros cinco termináramos con Mudkip, es una locura.",
         }), EvolvedString({
-            LANG_ENG: "I'd say he missed you.{w=0.5} Ever since I got back, he hasn't stopped staring at the door.",
+            LANG_ESP: "Totalmente.",
         }), EvolvedString({
-            LANG_ENG: "He's like a little robot!",
+            LANG_ESP: "Oigan chicos, hoy pasó algo loquísimo. ¡Resulta que yo y [first_name] elegimos las mismas electividades! ¡En el mismo orden y todo!",
         }), EvolvedString({
-            LANG_ENG: "It's very endearing to watch, albeit a little unsettling.",
+            LANG_ESP: "Hmm... las probabilidades de que ocurra algo así son bastante bajas.",
         }), EvolvedString({
-            LANG_ENG: "Anyway, how'd the day go for you, overall?",
+            LANG_ESP: "Aunque, de hecho, [first_name] y yo también estuvimos en las mismas electividades.",
         }), EvolvedString({
-            LANG_ENG: "All things considered, it was all right.{w=0.5} I got a new Pokémon, so that was pretty cool.",
+            LANG_ESP: "Vaya, ¿qué probabilidades hay de que Ethan, [first_name] y yo hayamos tomado las mismas electividades?",
         }), EvolvedString({
-            LANG_ENG: "Oh? A new Pokémon? Fantastic!",
+            LANG_ESP: "Son incluso más bajas.",
         }), EvolvedString({
-            LANG_ENG: "I, myself, received a Fletchling in my homeroom with Professor Sycamore.",
+            LANG_ESP: "Cambiando de tema, ¿qué les parecieron las clases?",
         }), EvolvedString({
-            LANG_ENG: "Professor Birch gave me a Mudkip! When this li'l guy evolves into a Swampert, it'll be one of the best ground types from Hoenn!",
+            LANG_ESP: "Hasta ahora han sido bastante tranquilas.{w=0.5} No muy diferentes de la preparatoria, para ser honesto.",
         }), EvolvedString({
-            LANG_ENG: "I have homeroom with Hilbert, and he said he got a Cubchoo. Pretty sure he'll be beelining it into a Beartic, though.",
+            LANG_ESP: "Pero muchas personas dicen que el cambio no siempre es bueno, así que tal vez debería sentirme afortunado.",
         }), EvolvedString({
-            LANG_ENG: "Well, what did you get?",
+            LANG_ESP: "Hombre, sé que estas clases van a matarme en cualquier segundo.",
         }), EvolvedString({
-            LANG_ENG: "I got ",
+            LANG_ESP: "¡Nunca había sentido tanta presión académica en mi vida!",
         }), EvolvedString({
-            LANG_ENG: " ",
+            LANG_ESP: "¿En serio? {i}Apenas{/i} es el primer día de clases.{w=0.5} ¿No crees que es demasiado pronto para declararlo una causa perdida?",
         }), EvolvedString({
-            LANG_ENG: "! Which is kinda crazy, because I always wanted one when I was a kid.",
+            LANG_ESP: "Hombre, no soy la herramienta más afilada de este cobertizo, por lo que cualquier clase de este lugar es difícil para mí en este momento.",
         }), EvolvedString({
-            LANG_ENG: "Looks like we've got two Mudkip in this dorm, now!",
+            LANG_ESP: "Yo básicamente siento... bueno, como si nada hubiera comenzado todavía.",
         }), EvolvedString({
-            LANG_ENG: "What?",
+            LANG_ESP: "Quiero decir, no hemos tenido exámenes, no hemos tenido batallas y ni siquiera hemos tenido que atrapar nuevos Pokémon... ¡Es como si todavía estuviéramos en el tutorial!",
         }), EvolvedString({
-            LANG_ENG: "Dude, I got ",
+            LANG_ESP: "Oh, no... ¿y yo ya estoy teniendo problemas en el {i}tutorial{/i}? Estoy perdido, hombre...",
         }), EvolvedString({
-            LANG_ENG: " ",
+            LANG_ESP: "Tú y tus compañeros de cuarto pasan un rato asegurándole a Brendan que, de hecho, no está perdido.",
         }), EvolvedString({
-            LANG_ENG: " as well!",
+            LANG_ESP: "Eventualmente, la conversación vuelve a girar en torno a tu nuevo Pokémon, y...",
         }), EvolvedString({
-            LANG_ENG: "No shit? Huh! The coincidences just keep piling up between us.",
+            LANG_ESP: "Come on out, [starter_name]!",
         }), EvolvedString({
-            LANG_ENG: "I can't believe that three of the five of us ended up with Mudkip! Crazy.",
+            LANG_ESP: "¡[startercrop]!",
         }), EvolvedString({
-            LANG_ENG: "So true.",
+            LANG_ESP: "Hmm... Ahora que lo pienso, ¿debería ponerte un apodo?",
         }), EvolvedString({
-            LANG_ENG: "Hey, you guys, the craziest thing happened. We both picked the same electives today! Same order and everything!",
+            LANG_ESP: "{color=#e70000}¿Cuál es el apodo de tu inicial? (Presiona Enter para utilizar el predefinido){/color}",
         }), EvolvedString({
-            LANG_ENG: "Hm... the odds of that are quite low.",
+            LANG_ESP: "{}[[]%<>",
         }), EvolvedString({
-            LANG_ENG: "Although ",
+            LANG_ESP: "Hmm... Creo que [starter_name] te queda perfecto.",
         }), EvolvedString({
-            LANG_ENG: " and I actually had the same electives, as well.",
+            LANG_ESP: "Sí, suena bien, [starter_name].",
         }), EvolvedString({
-            LANG_ENG: "Huh, what're the odds that Ethan, ",
+            LANG_ESP: "Espera, tengo una mejor idea.",
         }), EvolvedString({
-            LANG_ENG: " and I all had the same electives?",
+            LANG_ESP: "¡Bienvenido al equipo, [starter_name]!",
         }), EvolvedString({
-            LANG_ENG: "Even lower.",
+            LANG_ESP: "¡[species_name]!",
         }), EvolvedString({
-            LANG_ENG: "Well, how are you all feeling about classes?",
+            LANG_ESP: "¡Wow! Miren eso, ¡[startergender] ya te tiene cariño!",
         }), EvolvedString({
-            LANG_ENG: "It's been fairly uneventful thus far.{w=0.5} Not all that different from high school, to be honest.",
+            LANG_ESP: "No es común que un Pokémon se encariñe tan rápido con su entrenador justo después de conocerlo.",
         }), EvolvedString({
-            LANG_ENG: "But a lot of people say change isn't always a good thing, so perhaps I should count my blessings.",
+            LANG_ESP: "¿Deberás?{w=0.5}. No lo había notado, [starter_name] actúa prácticamente igual que [pika_name] hace unos años atrás.",
         }), EvolvedString({
-            LANG_ENG: "Man, I just know that these classes are gonna kill me.",
+            LANG_ESP: "¿E-en serio?{w=0.5} Entonces, ¿será que mis Pokémon no confían en mí?",
         }), EvolvedString({
-            LANG_ENG: "I've never felt so much academic pressure in my life!",
+            LANG_ESP: "No creo que sea eso. De hecho, me sorprendió que soltaras a [starter_name] aquí en la habitación, [first_name]. Pensé que tendríamos que ponernos a cubierto.",
         }), EvolvedString({
-            LANG_ENG: "Truly? It {i}is{/i} only the first day of class.{w=0.5} Don't you think that it's a bit too early to decry the insurmountable wall?",
+            LANG_ESP: "¿A qué te refieres? [startergendercap] es un bebé Pokémon. No puede causar {i}tantos{/i} destrozos.",
         }), EvolvedString({
-            LANG_ENG: "Hey man, I'm not the sharpest tool in the shed, so any class from this place is tough for me at this point, you know?",
+            LANG_ESP: "Es cierto, pero, más allá de eso... [startergender] no está causando {i}ningún{/i} destrozo.",
         }), EvolvedString({
-            LANG_ENG: "I basically feel... well, like nothing's actually started yet!",
+            LANG_ESP: "Esperen un segundo, ahora estoy confundido. Estan actuando como si esperaban que el amiguito de [first_name] se volviera loco cuando lo dejara salir.",
         }), EvolvedString({
-            LANG_ENG: "I mean, the classes haven't had any tests, we haven't had any battles, we haven't had to catch any new Pokémon...! It's like we're still in the tutorial!",
+            LANG_ESP: "¿Acaso tú no? [startergendercap] es un Pokémon bebé, como dijiste. No ha recibido ni una pizca de entrenamiento. Pero [startergender] simplemente está ahí... {i}quieto{/i}, esperando.",
         }), EvolvedString({
-            LANG_ENG: "Aw, man, I'm having trouble in the {i}tutorial{/i}? I'm doomed, man...",
+            LANG_ESP: "Calem, ¿nos estás tomando el pelo? Así son los Pokémon.",
         }), EvolvedString({
-            LANG_ENG: "You and your roommates spend a while assuring Brendan that he is not, in fact, doomed.",
+            LANG_ESP: "Te aseguro que los numerosos Pokémon bebé que el Profesor Ciprés me endilgó durante mi pasantía estarían en desacuerdo.",
         }), EvolvedString({
-            LANG_ENG: "Eventually, the conversation wraps back around to your new Pokémon, and...",
+            LANG_ESP: "Hombre, ya no sé qué pensar. Todos mis Pokémon tardaron semanas en acostumbrarse a mí.",
         }), EvolvedString({
-            LANG_ENG: "Come on out, ",
+            LANG_ESP: "Pensé que eso era lo normal, pero ahora que ustedes dicen lo contrario, tal vez soy malo con los Pokémon.",
         }), EvolvedString({
-            LANG_ENG: "!",
+            LANG_ESP: "Probablemente lo seas.",
         }), EvolvedString({
-            LANG_ENG: "",
+            LANG_ESP: "¡Hilbert!",
         }), EvolvedString({
-            LANG_ENG: "!",
+            LANG_ESP: "Déjame terminar.",
         }), EvolvedString({
-            LANG_ENG: "Hmm. Now that I think about it, should I give you a nickname?",
+            LANG_ESP: "Independientemente de si alguien aquí es bueno o malo con los Pokémon, la experiencia de Ethan y [first_name] no es típica.",
         }), EvolvedString({
-            LANG_ENG: "{color=#e70000}Your starter's nickname? (Press Enter for the default){/color}",
+            LANG_ESP: "Si todos soltáramos a nuestros Pokémon nuevos ahora mismo, esta habitación sería un desastre.",
         }), EvolvedString({
-            LANG_ENG: "Hm... I think ",
+            LANG_ESP: "... Así que no eres el raro aquí, Brendan.",
         }), EvolvedString({
-            LANG_ENG: " would suit you just fine.",
+            LANG_ESP: "¡Ja! ¡Genial!",
         }), EvolvedString({
-            LANG_ENG: "Yeah, that'll do, ",
+            LANG_ESP: "Un momento... ¿no se supone que ser el raro en este caso es algo bueno?",
         }), EvolvedString({
-            LANG_ENG: ".",
+            LANG_ESP: "Quizá podamos preguntarle al profesor Oak. Quería hacerle algunas preguntas antes, de todos modos.",
         }), EvolvedString({
-            LANG_ENG: "Wait, I've got a better idea.",
+            LANG_ESP: "De hecho... Ethan, ¿con qué profesor tienes clases generales? Ya que tenemos el mismo inicial y las mismas electivas, me sorprende que no estemos en la misma clase general.",
         }), EvolvedString({
-            LANG_ENG: "Welcome to the team, ",
+            LANG_ESP: "¡Oh, cierto! Estoy con Kr--{w=0.5} digo,{w=0.25} uh,{w=0.25} la Profesora Cherry.",
         }), EvolvedString({
-            LANG_ENG: "!",
+            LANG_ESP: "Hmm... no recuerdo a nadie con ese nombre en la lista de profesores.",
         }), EvolvedString({
-            LANG_ENG: "",
+            LANG_ESP: "Sí, la contrataron hace poco. Y es... bueno, es bastante peculiar.",
         }), EvolvedString({
-            LANG_ENG: "!",
+            LANG_ESP: "En fin, veré si mañana llego temprano a la clase general para preguntarle al Viejo O--{w=0.5} digo,{w=0.25} al Profesor Oak,{w=0.25} sobre por qué nuestros Pokémon son raros.",
         }), EvolvedString({
-            LANG_ENG: "Wow! Look at that, ",
+            LANG_ESP: "O del porqué no lo son, supongo.",
         }), EvolvedString({
-            LANG_ENG: " likes you already!",
+            LANG_ESP: "¡Suena como un plan! Ahora me voy a dormir. ¡Buenas noches a todos!",
         }), EvolvedString({
-            LANG_ENG: "It's not too often you find a Pokémon that gets chummy with its Trainer so soon after meetin' him.",
+            LANG_ESP: "Suena bien.{w=0.5} ¿Qué hay de ustedes dos? ¿Listos para ir a la cama?",
         }), EvolvedString({
-            LANG_ENG: "Really?{w=0.5} Huh. I never noticed. ",
+            LANG_ESP: "Pika.",
         }), EvolvedString({
-            LANG_ENG: "'s acting basically the same as ",
+            LANG_ESP: "[starter_fragment]!",
         }), EvolvedString({
-            LANG_ENG: " did all those years ago.",
-        }), EvolvedString({
-            LANG_ENG: "R-really? Huh...{w=0.5} Maybe my Pokémon just don't trust me, then?",
-        }), EvolvedString({
-            LANG_ENG: "No, I don't think that's it. I was actually quite surprised when you let ",
-        }), EvolvedString({
-            LANG_ENG: " out in this room, ",
-        }), EvolvedString({
-            LANG_ENG: ". I thought we'd have to duck for cover.",
-        }), EvolvedString({
-            LANG_ENG: "What do you mean? ",
-        }), EvolvedString({
-            LANG_ENG: "'s a baby Pokémon. ",
-        }), EvolvedString({
-            LANG_ENG: " can't cause {i}that{/i} much damage.",
-        }), EvolvedString({
-            LANG_ENG: "True, but, more to the point... ",
-        }), EvolvedString({
-            LANG_ENG: "'s not causing {i}any{/i} damage.",
-        }), EvolvedString({
-            LANG_ENG: "Hold on, I'm confused, now. You guys are acting like you expected ",
-        }), EvolvedString({
-            LANG_ENG: "'s buddy to just go berserk as soon as he let ",
-        }), EvolvedString({
-            LANG_ENG: " out.",
-        }), EvolvedString({
-            LANG_ENG: "Why, were you not? ",
-        }), EvolvedString({
-            LANG_ENG: "'s a baby Pokémon, as you've said. ",
-        }), EvolvedString({
-            LANG_ENG: " hasn't received even a modicum of training. But ",
-        }), EvolvedString({
-            LANG_ENG: "'s just... {i}being{/i} there, patiently.",
-        }), EvolvedString({
-            LANG_ENG: "Calem, you're pulling our leg, right? That's literally just how Pokémon are.",
-        }), EvolvedString({
-            LANG_ENG: "I assure you, the numerous baby starter Pokémon Professor Sycamore foisted on me during my internship would beg to disagree.",
-        }), EvolvedString({
-            LANG_ENG: "Man, I dunno what to think now. Every Pokémon I've ever had took weeks to feel comfortable around me.",
-        }), EvolvedString({
-            LANG_ENG: "I thought that was normal, but with you two saying the opposite, maybe I'm just bad at Pokémon.",
-        }), EvolvedString({
-            LANG_ENG: "You probably are.",
-        }), EvolvedString({
-            LANG_ENG: "Hilbert!",
-        }), EvolvedString({
-            LANG_ENG: "Let me finish.",
-        }), EvolvedString({
-            LANG_ENG: "Whether anyone here is good or bad at Pokémon, Ethan and ",
-        }), EvolvedString({
-            LANG_ENG: "'s experience is not typical.",
-        }), EvolvedString({
-            LANG_ENG: "If we were to all let our new Pokémon out right now, this room would become a disaster.",
-        }), EvolvedString({
-            LANG_ENG: "...So you are not one of the odd ones out here, Brendan.",
-        }), EvolvedString({
-            LANG_ENG: "Hah, sweet!",
-        }), EvolvedString({
-            LANG_ENG: "Hey, wait, isn't being one of the odd ones out a good thing, here?",
-        }), EvolvedString({
-            LANG_ENG: "Maybe we can ask Professor Oak about it. I wanted to ask him some questions earlier, anyway.",
-        }), EvolvedString({
-            LANG_ENG: "Actually... Ethan, which homeroom do you have? Given we got the same starter and electives, I'm really surprised we don't have the same homeroom.",
-        }), EvolvedString({
-            LANG_ENG: "Oh, yeah! I'm, uh... with Kr--{w=0.5} I mean,{w=0.25} uh,{w=0.25} Professor Cherry.",
-        }), EvolvedString({
-            LANG_ENG: "Hm. I don't remember that name from the faculty page.",
-        }), EvolvedString({
-            LANG_ENG: "Yeah, she was a new hire. And she's... well, she's a lot.",
-        }), EvolvedString({
-            LANG_ENG: "Anyway, I'll see if I can get to homeroom early tomorrow, and ask Old Man--{w=0.5} I mean,{w=0.25} Professor Oak,{w=0.25} about why our Pokémon are weird.",
-        }), EvolvedString({
-            LANG_ENG: "Or not weird, I guess.",
-        }), EvolvedString({
-            LANG_ENG: "Sounds like a plan! Now, I'm going to turn in. Night, all!",
-        }), EvolvedString({
-            LANG_ENG: "Sounds good.{w=0.5} What about you two? Ready for bed?",
-        }), EvolvedString({
-            LANG_ENG: "Pika.",
-        }), EvolvedString({
-            LANG_ENG: "",
-        }), EvolvedString({
-            LANG_ENG: "!",
-        }), EvolvedString({
-            LANG_ENG: "As you crawl into bed, you do not even have time to realize just how exhausted you are.{w=0.5} Not even a minute after your head hits the pillow, you fall into a deep sleep.",
+            LANG_ESP: "Mientras te acomodas en la cama, ni siquiera tienes tiempo de darte cuenta de lo agotado que estás.{w=0.5} Ni un minuto después de que tu cabeza toca la almohada, caes en un sueño profundo.",
         }), 
     ]
