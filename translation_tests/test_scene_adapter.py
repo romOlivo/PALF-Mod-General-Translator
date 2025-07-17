@@ -70,6 +70,7 @@ class TestScenesAdapter:
         "scene_example_05",                      # Change, characters
         "scene_example_06",                      # Change, menu options
         "scene_example_07",                      # Change, with special /" case
+        "scene_example_08",                      # Change, with special ignore .ogg case
     ])
     def test_convert_scene_output(self, scene_name):
         scene_adapter.set_global_path("./translation_tests/")

@@ -56,6 +56,13 @@ def _write_output(text):
     output_text += new_str
 
 
+def must_ignore_line(line):
+    must_ignore = False
+    for text in IGNORE_SUBSTRINGS:
+        must_ignore = must_ignore or text in line
+    return must_ignore
+
+
 #     >>>>>   Logic
 def _replace_line_and_write_output(line, var_name):
     split_line_comma = line.split('"')
@@ -63,7 +70,7 @@ def _replace_line_and_write_output(line, var_name):
     if len(split_line_comma) > 2:
         new_text = split_line_comma[0]
         for i in range(1, len(split_line_comma)):
-            if i % 2 == 1:
+            if i % 2 == 1 and not must_ignore_line(split_line_comma[i]):
                 new_text += _get_processed_line(var_name)
                 _write_output(split_line_comma[i].replace(SPECIAL_CHARACTER_TO_REPLACE, SPECIAL_CHARACTER))
             else:
