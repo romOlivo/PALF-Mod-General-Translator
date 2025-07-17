@@ -137,6 +137,7 @@ def fuse_scene_text(file_path_original:str, file_path_translation:str, write_out
         # Write the result in the original file if needed.
         with open(file_path_original, 'w') as f:
             f.write(text_new)
+        os.remove(file_path_translation)
     else:
         return text_new
 
