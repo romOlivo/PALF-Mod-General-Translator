@@ -2,6 +2,7 @@ import os
 
 # -------------------- CONSTANT DEFINITION --------------------
 IGNORE_SYMBOLS = ["$", "queue"]
+IGNORE_SUBSTRINGS = [".ogg"]
 
 SPECIAL_CHARACTER_TO_REPLACE = "#!#"
 DEFAULT_LANGUAGE = "LANG_ENG"
@@ -64,9 +65,9 @@ def _replace_line_and_write_output(line, var_name):
         for i in range(1, len(split_line_comma)):
             if i % 2 == 1:
                 new_text += _get_processed_line(var_name)
-                _write_output(split_line_comma[i])
+                _write_output(split_line_comma[i].replace(SPECIAL_CHARACTER_TO_REPLACE, SPECIAL_CHARACTER))
             else:
-                new_text += split_line_comma[i]
+                new_text += split_line_comma[i].replace(SPECIAL_CHARACTER_TO_REPLACE, SPECIAL_CHARACTER)
     return new_text + '\n'
 
 
@@ -176,7 +177,7 @@ def convert_scene(scene_name: str, path_to_scene: str, test_mode=False, write_ou
                 new_scene_text += _replace_line_and_write_output(line, var_name)
             # Other case
             else:
-                new_scene_text += line + "\n"
+                new_scene_text += line.replace(SPECIAL_CHARACTER_TO_REPLACE, SPECIAL_CHARACTER) + "\n"
     if write_output:
         output_text += _str_end_text_file()
     # If testing, then return the values
